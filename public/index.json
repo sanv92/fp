@@ -1,0 +1,22 @@
+[
+{
+	"uri": "http://example.org/",
+	"title": "Basics",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 1 Basics Discover what this Hugo theme is all about and the core-concepts behind it.\nconsole.log(1)  "
+},
+{
+	"uri": "http://example.org/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://example.org/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
