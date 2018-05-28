@@ -1,10 +1,38 @@
 [
 {
-	"uri": "http://example.org/",
-	"title": "Basics",
+	"uri": "http://example.org/functor/",
+	"title": "Functor",
 	"tags": [],
-	"description": "",
-	"content": " Chapter 1 Basics Discover what this Hugo theme is all about and the core-concepts behind it.\nconsole.log(1)  "
+	"description": "Functional JavaScript: Functors",
+	"content": " Functor So, What are Functors? Functors are the containers or type that can be used with ‘map’ function.\nExample:\nContainer.prototype.map = function (f) { return Container.of(f(this.$value)); }; Container.of(2).map(two =\u0026gt; two + 2);  [1, 2, 3].map((num) =\u0026gt; num + 2);  Read more: - https://hackernoon.com/functors-in-javascript-20a647b8f39f\n"
+},
+{
+	"uri": "http://example.org/setoid/",
+	"title": "Setoid",
+	"tags": [],
+	"description": "Setoid",
+	"content": " Setoid "
+},
+{
+	"uri": "http://example.org/semigroup/",
+	"title": "Semigroup",
+	"tags": [],
+	"description": "Semigroup",
+	"content": " Semigroup "
+},
+{
+	"uri": "http://example.org/monoid/",
+	"title": "Monoid",
+	"tags": [],
+	"description": "Monoid",
+	"content": " Monoid "
+},
+{
+	"uri": "http://example.org/alt/",
+	"title": "Alt",
+	"tags": [],
+	"description": "Alt",
+	"content": " Alt "
 },
 {
 	"uri": "http://example.org/categories/",
@@ -12,6 +40,13 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://example.org/",
+	"title": "Functional Programming (Fantasy Land JavaScript specification Guide)",
+	"tags": [],
+	"description": "",
+	"content": " Functional Programming (Fantasy Land JavaScript specification Guide) Basics Read books and Articles  http://www.tomharding.me/fantasy-land/ https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo https://github.com/MostlyAdequate/mostly-adequate-guide https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT  "
 },
 {
 	"uri": "http://example.org/tags/",
