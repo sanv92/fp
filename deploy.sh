@@ -27,6 +27,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 cd docs
 
 # Add changes to git.
+git init
 git add .
 
 # Commit changes.
@@ -35,6 +36,9 @@ if [ $# -eq 1 ]
   then msg="$1"
 fi
 git commit -m "$msg"
+
+# Add repository
+git remote add origin git@github.com:everyone-can-code/fp.git
 
 # Push source and build repos.
 git push origin master
