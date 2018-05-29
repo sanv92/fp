@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# 1. main repository
-echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
-
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+# 1. main repository
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Add changes to git.
 git add .
@@ -23,11 +23,9 @@ git push origin master
 # 2. organisation repository
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
-
 # Go To Docs folder
 cd docs
+
 # Add changes to git.
 git add .
 
