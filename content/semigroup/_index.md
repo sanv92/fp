@@ -1,12 +1,9 @@
 +++
-title = "Setoid"
+title = "Semigroup"
+description = "Semigroup"
 chapter = true
-weight = 2
-pre = "<b>1. </b>"
+weight = 3
+pre = "<b>3. </b>"
 +++
 
-### Chapter 2
-
-# Basics
-
-```xxx```
+# Semigroup

@@ -2,20 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/fp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/alt/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/alt/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/functor/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/functor/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/monoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monoid/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/semigroup/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semigroup/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/setoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/setoid/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/aaa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/alt/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/alt/index.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/categories/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/css/app.ab4b67a3ea25990fa8279f3b7ef08b61.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/js/app.3fc0f988d21662902933.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/gohugo-default-sample-hero-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/auto-complete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/featherlight.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/hugo-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/hybrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/nucleus.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/perfect-scrollbar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/theme-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/theme-green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/theme-red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/functor/container.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/functor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/functor/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/clippy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/gopher-404.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/auto-complete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/clipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/featherlight.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/html5shiv-printshiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/hugo-learn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery-2.x.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/learn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/modernizr.custom.71422.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/perfect-scrollbar.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.forest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/monoid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/monoid/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semigroup/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/semigroup/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/setoid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/setoid/index.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/tags/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/ananke/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/ananke/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/learn" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,26 +115,71 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="default.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/archetypes/default.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="config.toml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.toml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="12" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
+            <state relative-caret-position="165">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baseof.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/baseof.html">
+      <file leaf-file-name="deploy.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fp.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/fp.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/functor/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="32" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/alt/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/setoid/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/semigroup/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -52,17 +187,17 @@
       <file leaf-file-name=".gitmodules" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitmodules">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="30">
+              <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+      <file leaf-file-name="config.toml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.toml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -72,10 +207,24 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>languageCode</find>
+      <find>xxx</find>
+      <find>css</find>
+      <find>learn.js</find>
+      <find>hugo-theme-learn</find>
+      <find>disableLogo</find>
+      <find>desc</find>
+      <find>topics</find>
+      <find>topi</find>
+      <find>Built with</find>
+      <find>generator</find>
       <find>dist</find>
+      <find>STA</find>
     </findStrings>
     <dirStrings>
+      <dir>$PROJECT_DIR$/themes/hugo-theme-learn</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/themes/hugo-theme-learn/layouts</dir>
+      <dir>$PROJECT_DIR$/themes</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -85,8 +234,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config.toml" />
         <option value="$PROJECT_DIR$/themes/ananke/layouts/_default/baseof.html" />
+        <option value="$PROJECT_DIR$/layouts/_default/single.html" />
+        <option value="$PROJECT_DIR$/themes/learn/layouts/partials/footer.html" />
+        <option value="$PROJECT_DIR$/.gitmodules" />
+        <option value="$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/menu.html" />
+        <option value="$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/header.html" />
+        <option value="$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/logo.html" />
+        <option value="$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/layouts/partials/menu-footer.html" />
+        <option value="$PROJECT_DIR$/content/functor.md" />
+        <option value="$PROJECT_DIR$/content/functor/functor.md" />
+        <option value="$PROJECT_DIR$/content/posts/_index.md" />
+        <option value="$PROJECT_DIR$/content/Setoid/_index.md" />
+        <option value="$PROJECT_DIR$/content/_index.md" />
+        <option value="$PROJECT_DIR$/content/functor/_index.md" />
+        <option value="$PROJECT_DIR$/content/alt/_index.md" />
+        <option value="$PROJECT_DIR$/content/setoid/_index.md" />
+        <option value="$PROJECT_DIR$/content/semigroup/_index.md" />
+        <option value="$PROJECT_DIR$/content/monoid/_index.md" />
+        <option value="$PROJECT_DIR$/deploy.sh" />
+        <option value="$PROJECT_DIR$/config.toml" />
       </list>
     </option>
   </component>
@@ -119,11 +286,6 @@
               <item name="fp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="fp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -135,6 +297,18 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/functor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/functor" />
+      <recent name="$PROJECT_DIR$/content/monoid" />
+      <recent name="$PROJECT_DIR$/content/semigroup" />
+      <recent name="$PROJECT_DIR$/content" />
+      <recent name="$PROJECT_DIR$/content/posts" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,93 +322,292 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="fp" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/" />
-      <package value="fp" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="fp" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
-      <package value="fp" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-    </configuration>
-  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="794" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="PlantUML" />
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.47345766" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32998565" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49928468" visible="true" weight="0.19225252" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.599713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="right" id="PlantUML" order="1" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49928468" weight="0.5035868" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5007153" side_tool="true" weight="0.5035868" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/archetypes/default.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/my-first-post.md">
+    <entry file="file://$PROJECT_DIR$/public/sitemap.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitmodules">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/archetypes/default.md">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/_default/single.html" />
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.toml">
+    <entry file="file://$PROJECT_DIR$/public/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/i18n/en.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/i18n/es.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/i18n/fr.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/i18n/pt.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/_default/list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/_default/single.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ananke/theme.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="-413" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/terms.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/taxonomy.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/list.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/page/single.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/static/js/learn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1797" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/wercker.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/theme.toml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/LICENSE.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/meta.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="106" selection-start-column="95" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/static/mermaid/mermaid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="18" column="32100" selection-start-line="18" selection-start-column="32100" selection-end-line="18" selection-end-column="32100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/logo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/layouts/partials/menu-footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/docuapi/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/docuapi/layouts/_default/baseof.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/baseof.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        <state relative-caret-position="362">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/aaa.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/functor/my-first-post.md" />
+    <entry file="file://$PROJECT_DIR$/content/posts/_index.md" />
+    <entry file="file://$PROJECT_DIR$/content/posts/my-first-post.md" />
+    <entry file="file://$PROJECT_DIR$/content/fp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/functor/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="32" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/alt/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/setoid/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/semigroup/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitmodules">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>

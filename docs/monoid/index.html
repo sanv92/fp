@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
   <head>
-	<meta name="generator" content="Hugo 0.41" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Functional Programming (Fantasy Land JavaScript specification Guide)</title>
-    <meta name="description" content="Functional Programming (Fantasy Land JavaScript specification Guide)">
+    <title>Monoid</title>
+    <meta name="description" content="Monoid">
 
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <link href="/css/nucleus.css?1527543155" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1527543155" rel="stylesheet">
-    <link href="/css/hybrid.css?1527543155" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1527543155" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1527543155" rel="stylesheet">
-    <link href="/css/auto-complete.css?1527543155" rel="stylesheet">
-    <link href="/css/theme.css?1527543155" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1527543155" rel="stylesheet">
+    <link href="/css/nucleus.css?1527627704" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1527627704" rel="stylesheet">
+    <link href="/css/hybrid.css?1527627704" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1527627704" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1527627704" rel="stylesheet">
+    <link href="/css/auto-complete.css?1527627704" rel="stylesheet">
+    <link href="/css/theme.css?1527627704" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1527627704" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1527543155"></script>
+    <script src="/js/jquery-2.x.min.js?1527627704"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -32,7 +31,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/monoid/">
     <nav id="sidebar" class="">
 
 
@@ -46,14 +45,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1527543155"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1527543155"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1527627704"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1527627704"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1527543155"></script>
+<script type="text/javascript" src="/js/search.js?1527627704"></script>
 
     
   </div>
@@ -136,8 +135,8 @@
   
     
     <li data-nav-id="/monoid/" title="Monoid" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/monoid/">
@@ -209,6 +208,36 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Monoid
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
 
         
           <div id="chapter">
@@ -218,29 +247,16 @@
 
         
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h3 id="functional-programming-fantasy-land-javascript-specification-guide">Functional Programming (Fantasy Land JavaScript specification Guide)</h3>
 
-<h1 id="basics">Basics</h1>
+<h1 id="monoid">Monoid</h1>
 
-<p><img src="fp.png" alt="fp" /></p>
 
-<h3 id="read-books-and-articles">Read books and Articles</h3>
-
-<ul>
-<li><a href="http://www.tomharding.me/fantasy-land/">http://www.tomharding.me/fantasy-land/</a></li>
-<li><a href="https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo">https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo</a></li>
-<li><a href="https://github.com/MostlyAdequate/mostly-adequate-guide">https://github.com/MostlyAdequate/mostly-adequate-guide</a></li>
-<li><a href="https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT">https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT</a></li>
-</ul>
+<footer class=" footline" >
 	
-  
+</footer>
+
         
             </div> 
         
@@ -325,6 +341,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -341,6 +358,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -359,8 +379,10 @@
 
 
         
+            <a class="nav nav-prev" href="/semigroup/" title="Semigroup"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/functor/" title="Functor" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/alt/" title="Alt" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -369,20 +391,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1527543155"></script>
-    <script src="/js/perfect-scrollbar.min.js?1527543155"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1527543155"></script>
-    <script src="/js/jquery.sticky.js?1527543155"></script>
-    <script src="/js/featherlight.min.js?1527543155"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1527543155"></script>
-    <script src="/js/highlight.pack.js?1527543155"></script>
+    <script src="/js/clipboard.min.js?1527627704"></script>
+    <script src="/js/perfect-scrollbar.min.js?1527627704"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1527627704"></script>
+    <script src="/js/jquery.sticky.js?1527627704"></script>
+    <script src="/js/featherlight.min.js?1527627704"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1527627704"></script>
+    <script src="/js/highlight.pack.js?1527627704"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1527543155"></script>
-    <script src="/js/learn.js?1527543155"></script>
-    <script src="/js/hugo-learn.js?1527543155"></script>
+    <script src="/js/modernizr.custom.71422.js?1527627704"></script>
+    <script src="/js/learn.js?1527627704"></script>
+    <script src="/js/hugo-learn.js?1527627704"></script>
 
-    <link href="/mermaid/mermaid.css?1527543155" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1527543155"></script>
+    <link href="/mermaid/mermaid.css?1527627704" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1527627704"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
@@ -390,4 +412,3 @@
 
   </body>
 </html>
-

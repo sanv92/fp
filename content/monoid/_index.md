@@ -1,12 +1,9 @@
 +++
-title = "Setoid"
+title = "Monoid"
+description = "Monoid"
 chapter = true
-weight = 2
-pre = "<b>1. </b>"
+weight = 4
+pre = "<b>4. </b>"
 +++
 
-### Chapter 2
-
-# Basics
-
-```xxx```
+# Monoid

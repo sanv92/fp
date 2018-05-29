@@ -1,18 +1,18 @@
 +++
-title = "Basics"
+title = "Functional Programming (Fantasy Land JavaScript specification Guide)"
 chapter = true
-weight = 5
+weight = 0
 pre = "<b>1. </b>"
 +++
 
-### Chapter 1
+### Functional Programming (Fantasy Land JavaScript specification Guide)
 
 # Basics
 
-Discover what this Hugo theme is all about and the core-concepts behind it.
+![fp](fp.png)
 
-```js
-console.log(1)
-```
-
-![Minion3](aaa.png)
+### Read books and Articles
+- http://www.tomharding.me/fantasy-land/
+- https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo
+- https://github.com/MostlyAdequate/mostly-adequate-guide
+- https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT

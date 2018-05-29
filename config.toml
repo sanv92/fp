@@ -1,4 +1,6 @@
 baseURL = "http://example.org/"
+publishDir = "docs"
+
 languageCode = "en-us"
 title = "Functional Programming (Fantasy Land JavaScript specification Guide)"
 

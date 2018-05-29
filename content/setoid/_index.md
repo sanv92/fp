@@ -1,12 +1,9 @@
 +++
-title = "Functor"
+title = "Setoid"
+description = "Setoid"
 chapter = true
-weight = 1
-pre = "<b>1. </b>"
+weight = 2
+pre = "<b>2. </b>"
 +++
 
-### Chapter 2
-
-# Basics
-
-```xxx```
+# Setoid
