@@ -2,110 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/alt/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/alt/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/functor/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/functor/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/monoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monoid/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semigroup/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semigroup/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/setoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/setoid/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/aaa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/alt/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/alt/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/categories/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/auto-complete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/featherlight.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/hugo-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/hybrid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/nucleus.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/perfect-scrollbar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme-blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme-green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme-red.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Inconsolata.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-Normal-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Novecentosanswide-UltraLight-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_200.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_300.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/Work_Sans_500.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/functor/container.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/functor/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/functor/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/clippy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/gopher-404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/auto-complete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/clipboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/featherlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/highlight.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/html5shiv-printshiv.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/hugo-learn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery-2.x.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.sticky.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/learn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/lunr.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/modernizr.custom.71422.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/perfect-scrollbar.jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/perfect-scrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.forest.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mermaid/mermaid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/monoid/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/monoid/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semigroup/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/semigroup/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/setoid/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/setoid/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/index.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/learn" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -179,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -197,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/config.toml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -327,7 +224,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32998565" />
       <window_info anchor="right" id="Database" order="3" />
@@ -335,7 +232,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.599713" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" weight="0.59827834" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -586,7 +483,7 @@
     <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -607,7 +504,7 @@
     <entry file="file://$PROJECT_DIR$/config.toml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
