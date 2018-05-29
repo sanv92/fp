@@ -1,55 +1,55 @@
 [
 {
-	"uri": "fp/functor/",
+	"uri": "/fp/functor/",
 	"title": "Functor",
 	"tags": [],
 	"description": "Functional JavaScript: Functors",
 	"content": " Functor So, What are Functors? Functors are the containers or type that can be used with ‘map’ function.\nExample:\nContainer.prototype.map = function (f) { return Container.of(f(this.$value)); }; Container.of(2).map(two =\u0026gt; two + 2);  [1, 2, 3].map((num) =\u0026gt; num + 2);  Read more: - https://hackernoon.com/functors-in-javascript-20a647b8f39f\n"
 },
 {
-	"uri": "fp/setoid/",
+	"uri": "/fp/setoid/",
 	"title": "Setoid",
 	"tags": [],
 	"description": "Setoid",
 	"content": " Setoid "
 },
 {
-	"uri": "fp/semigroup/",
+	"uri": "/fp/semigroup/",
 	"title": "Semigroup",
 	"tags": [],
 	"description": "Semigroup",
 	"content": " Semigroup "
 },
 {
-	"uri": "fp/monoid/",
+	"uri": "/fp/monoid/",
 	"title": "Monoid",
 	"tags": [],
 	"description": "Monoid",
 	"content": " Monoid "
 },
 {
-	"uri": "fp/alt/",
+	"uri": "/fp/alt/",
 	"title": "Alt",
 	"tags": [],
 	"description": "Alt",
 	"content": " Alt "
 },
 {
-	"uri": "fp/categories/",
+	"uri": "/fp/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "fp/",
+	"uri": "/fp/",
 	"title": "Functional Programming (Fantasy Land JavaScript specification Guide)",
 	"tags": [],
 	"description": "",
 	"content": " Functional Programming (Fantasy Land JavaScript specification Guide) Basics Read books and Articles  http://www.tomharding.me/fantasy-land/ https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo https://github.com/MostlyAdequate/mostly-adequate-guide https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT  "
 },
 {
-	"uri": "fp/tags/",
+	"uri": "/fp/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
