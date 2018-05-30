@@ -19,3 +19,6 @@ pre = "<b>1. </b>"
 - http://telegra.ph/Vvedenie-v-FP-06-26
 - https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo
 - https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT
+
+### Libraries to write Functional Programming in JavaScript
+- https://ramdajs.com/
