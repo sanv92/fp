@@ -7,21 +7,21 @@
     <meta name="description" content="Setoid">
 
 
-    <link rel="shortcut icon" href="/fp/images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="/fp/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <link href="/fp/css/nucleus.css?1527713770" rel="stylesheet">
-    <link href="/fp/css/font-awesome.min.css?1527713770" rel="stylesheet">
-    <link href="/fp/css/hybrid.css?1527713770" rel="stylesheet">
-    <link href="/fp/css/featherlight.min.css?1527713770" rel="stylesheet">
-    <link href="/fp/css/perfect-scrollbar.min.css?1527713770" rel="stylesheet">
-    <link href="/fp/css/auto-complete.css?1527713770" rel="stylesheet">
-    <link href="/fp/css/theme.css?1527713770" rel="stylesheet">
-    <link href="/fp/css/hugo-theme.css?1527713770" rel="stylesheet">
+    <link href="/css/nucleus.css?1527799298" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1527799298" rel="stylesheet">
+    <link href="/css/hybrid.css?1527799298" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1527799298" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1527799298" rel="stylesheet">
+    <link href="/css/auto-complete.css?1527799298" rel="stylesheet">
+    <link href="/css/theme.css?1527799298" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1527799298" rel="stylesheet">
     
 
-    <script src="/fp/js/jquery-2.x.min.js?1527713770"></script>
+    <script src="/js/jquery-2.x.min.js?1527799298"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -31,7 +31,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fp/setoid/">
+  <body class="" data-url="/setoid/">
     <nav id="sidebar" class="">
 
 
@@ -45,14 +45,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/fp/js/lunr.min.js?1527713770"></script>
-<script type="text/javascript" src="/fp/js/auto-complete.js?1527713770"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1527799298"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1527799298"></script>
 <script type="text/javascript">
     
-        var baseurl = '\/fp';
+        var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/fp/js/search.js?1527713770"></script>
+<script type="text/javascript" src="/js/search.js?1527799298"></script>
 
     
   </div>
@@ -68,12 +68,12 @@
  
   
     
-    <li data-nav-id="/fp/functor/" title="Functor" class="dd-item 
+    <li data-nav-id="/functor/" title="Functor" class="dd-item 
         
         
         
         ">
-      <a href="/fp/functor/">
+      <a href="/functor/">
           <b>1. </b>Functor
           
       </a>
@@ -90,12 +90,12 @@
  
   
     
-    <li data-nav-id="/fp/setoid/" title="Setoid" class="dd-item 
+    <li data-nav-id="/setoid/" title="Setoid" class="dd-item 
         parent
         active
         
         ">
-      <a href="/fp/setoid/">
+      <a href="/setoid/">
           <b>2. </b>Setoid
           
       </a>
@@ -112,13 +112,13 @@
  
   
     
-    <li data-nav-id="/fp/semigroup/" title="Semigroup" class="dd-item 
+    <li data-nav-id="/ord/" title="Ord" class="dd-item 
         
         
         
         ">
-      <a href="/fp/semigroup/">
-          <b>3. </b>Semigroup
+      <a href="/ord/">
+          <b>3. </b>Ord
           
       </a>
       
@@ -134,12 +134,12 @@
  
   
     
-    <li data-nav-id="/fp/monoid/" title="Monoid" class="dd-item 
+    <li data-nav-id="/monoid/" title="Monoid" class="dd-item 
         
         
         
         ">
-      <a href="/fp/monoid/">
+      <a href="/monoid/">
           <b>4. </b>Monoid
           
       </a>
@@ -156,13 +156,35 @@
  
   
     
-    <li data-nav-id="/fp/alt/" title="Alt" class="dd-item 
+    <li data-nav-id="/semigroup/" title="Semigroup" class="dd-item 
         
         
         
         ">
-      <a href="/fp/alt/">
-          <b>5. </b>Alt
+      <a href="/semigroup/">
+          <b>5. </b>Semigroup
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/alt/" title="Alt" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/alt/">
+          <b>6. </b>Alt
           
       </a>
       
@@ -227,7 +249,7 @@
             
           
           
-            <a href='/fp/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Setoid
+            <a href='/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Setoid
           
          
           
@@ -251,6 +273,39 @@
 
 
 <h1 id="setoid">Setoid</h1>
+
+<p>A value which has a Setoid must provide an equals method. The equals method takes one argument:</p>
+
+<p>Make array to Setoid:</p>
+
+<pre><code class="language-js">Array.prototype.equals = (arr) =&gt; {
+  const len = this.length
+
+  if (len !== arr.length) {
+    return false
+  }
+
+  for (let i = 0; i &lt; len; i++) {
+    if (this[i] !== arr[i]) {
+      return false
+    }
+  }
+
+  return true
+}
+
+;[1, 2].equals([1, 2]) // true
+;[1, 2].equals([0]) // false
+</code></pre>
+
+<hr />
+
+<h4 id="read-more">Read More:</h4>
+
+<ul>
+<li><a href="https://medium.com/devschacht/tom-harding-fantas-eel-and-specification-3-setoid-78c2a0e8cc07">https://medium.com/devschacht/tom-harding-fantas-eel-and-specification-3-setoid-78c2a0e8cc07</a></li>
+<li><a href="http://www.tomharding.me/2017/03/09/fantas-eel-and-specification-3/">http://www.tomharding.me/2017/03/09/fantas-eel-and-specification-3/</a></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -372,6 +427,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -379,10 +450,10 @@
 
 
         
-            <a class="nav nav-prev" href="/fp/functor/" title="Functor"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/functor/" title="Functor"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/fp/semigroup/" title="Semigroup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/ord/" title="Ord" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -391,20 +462,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/fp/js/clipboard.min.js?1527713770"></script>
-    <script src="/fp/js/perfect-scrollbar.min.js?1527713770"></script>
-    <script src="/fp/js/perfect-scrollbar.jquery.min.js?1527713770"></script>
-    <script src="/fp/js/jquery.sticky.js?1527713770"></script>
-    <script src="/fp/js/featherlight.min.js?1527713770"></script>
-    <script src="/fp/js/html5shiv-printshiv.min.js?1527713770"></script>
-    <script src="/fp/js/highlight.pack.js?1527713770"></script>
+    <script src="/js/clipboard.min.js?1527799298"></script>
+    <script src="/js/perfect-scrollbar.min.js?1527799298"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1527799298"></script>
+    <script src="/js/jquery.sticky.js?1527799298"></script>
+    <script src="/js/featherlight.min.js?1527799298"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1527799298"></script>
+    <script src="/js/highlight.pack.js?1527799298"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/fp/js/modernizr.custom.71422.js?1527713770"></script>
-    <script src="/fp/js/learn.js?1527713770"></script>
-    <script src="/fp/js/hugo-learn.js?1527713770"></script>
+    <script src="/js/modernizr.custom.71422.js?1527799298"></script>
+    <script src="/js/learn.js?1527799298"></script>
+    <script src="/js/hugo-learn.js?1527799298"></script>
 
-    <link href="/fp/mermaid/mermaid.css?1527713770" type="text/css" rel="stylesheet" />
-    <script src="/fp/mermaid/mermaid.js?1527713770"></script>
+    <link href="/mermaid/mermaid.css?1527799298" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1527799298"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

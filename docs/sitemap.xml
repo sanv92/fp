@@ -3,36 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/fp/functor/</loc>
+    <loc>http://example.org/functor/</loc>
   </url>
   
   <url>
-    <loc>/fp/setoid/</loc>
+    <loc>http://example.org/setoid/</loc>
   </url>
   
   <url>
-    <loc>/fp/semigroup/</loc>
+    <loc>http://example.org/ord/</loc>
   </url>
   
   <url>
-    <loc>/fp/monoid/</loc>
+    <loc>http://example.org/monoid/</loc>
   </url>
   
   <url>
-    <loc>/fp/alt/</loc>
+    <loc>http://example.org/semigroup/</loc>
   </url>
   
   <url>
-    <loc>/fp/categories/</loc>
+    <loc>http://example.org/alt/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/fp/</loc>
+    <loc>http://example.org/</loc>
   </url>
   
   <url>
-    <loc>/fp/tags/</loc>
+    <loc>http://example.org/tags/</loc>
     <priority>0</priority>
   </url>
   

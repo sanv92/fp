@@ -2,8 +2,8 @@
 title = "Semigroup"
 description = "Semigroup"
 chapter = true
-weight = 3
-pre = "<b>3. </b>"
+weight = 5
+pre = "<b>5. </b>"
 +++
 
 # Semigroup

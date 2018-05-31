@@ -20,5 +20,9 @@ pre = "<b>1. </b>"
 - https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo
 - https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT
 
+### Video courses (Russian)
+- https://stepik.org/course/75
+- https://stepik.org/course/693/
+
 ### Libraries to write Functional Programming in JavaScript
 - https://ramdajs.com/
