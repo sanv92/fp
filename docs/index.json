@@ -1,62 +1,62 @@
 [
 {
-	"uri": "http://example.org/functor/",
+	"uri": "/fp/functor/",
 	"title": "Functor",
 	"tags": [],
 	"description": "Functional JavaScript: Functors",
 	"content": " Functor So, What are Functors? Functors are the containers or type that can be used with ‘map’ function.\nExample:\nContainer.prototype.map = function (f) { return Container.of(f(this.$value)); }; Container.of(2).map(two =\u0026gt; two + 2);  [1, 2, 3].map((num) =\u0026gt; num + 2);  Read more: - https://hackernoon.com/functors-in-javascript-20a647b8f39f\n"
 },
 {
-	"uri": "http://example.org/setoid/",
+	"uri": "/fp/setoid/",
 	"title": "Setoid",
 	"tags": [],
 	"description": "Setoid",
 	"content": " Setoid A value which has a Setoid must provide an equals method. The equals method takes one argument:\nMake array to Setoid:\nArray.prototype.equals = (arr) =\u0026gt; { const len = this.length if (len !== arr.length) { return false } for (let i = 0; i \u0026lt; len; i++) { if (this[i] !== arr[i]) { return false } } return true } ;[1, 2].equals([1, 2]) // true ;[1, 2].equals([0]) // false  Read More:  https://medium.com/devschacht/tom-harding-fantas-eel-and-specification-3-setoid-78c2a0e8cc07 http://www.tomharding.me/2017/03/09/fantas-eel-and-specification-3/  "
 },
 {
-	"uri": "http://example.org/ord/",
+	"uri": "/fp/ord/",
 	"title": "Ord",
 	"tags": [],
 	"description": "Ord",
 	"content": " Ord  ksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk sl ksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk sl ksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk slksdmkasmdk sl  graph LR; A[Hard edge] --|Link text| B(Round edge) B -- C{Decision} C --|One| D[Result one] C --|Two| E[Result two]  "
 },
 {
-	"uri": "http://example.org/monoid/",
+	"uri": "/fp/monoid/",
 	"title": "Monoid",
 	"tags": [],
 	"description": "Monoid",
 	"content": " Monoid "
 },
 {
-	"uri": "http://example.org/semigroup/",
+	"uri": "/fp/semigroup/",
 	"title": "Semigroup",
 	"tags": [],
 	"description": "Semigroup",
 	"content": " Semigroup "
 },
 {
-	"uri": "http://example.org/alt/",
+	"uri": "/fp/alt/",
 	"title": "Alt",
 	"tags": [],
 	"description": "Alt",
 	"content": " Alt "
 },
 {
-	"uri": "http://example.org/categories/",
+	"uri": "/fp/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://example.org/",
+	"uri": "/fp/",
 	"title": "Functional Programming (Fantasy Land JavaScript specification Guide)",
 	"tags": [],
 	"description": "",
 	"content": " Functional Programming (Fantasy Land JavaScript specification Guide) Basics Read books and Articles  http://www.tomharding.me/fantasy-land/ https://github.com/MostlyAdequate/mostly-adequate-guide, https://mostly-adequate.gitbooks.io/mostly-adequate-guide/ https://habr.com/company/mailru/blog/327522/ http://daynin.github.io/functional-js/ http://telegra.ph/Vvedenie-v-FP-06-26 https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT  Video courses (Russian)  https://stepik.org/course/75 https://stepik.org/course/693/  Libraries to write Functional Programming in JavaScript  https://ramdajs.com/  "
 },
 {
-	"uri": "http://example.org/tags/",
+	"uri": "/fp/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
