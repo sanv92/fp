@@ -7,15 +7,20 @@ pre = "<b>1. </b>"
 +++
 
 # Functor
-
 ![container](container.gif)
 
 **So, What are Functors?**
 Functors are the containers or type that can be used with ‘map’ function.
 
-**Example:**
+## Graphic
+{{<mermaid align="center">}}
+graph LR;
+    A[Functor]
+{{</mermaid>}}
+
+## Example:
 ```js
-Container.prototype.map = function (f) {
+Container.prototype.map = (f) => {
   return Container.of(f(this.$value));
 };
 

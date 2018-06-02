@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Functor</title>
-    <meta name="description" content="Functional JavaScript: Functors">
+    <title>Foldable</title>
+    <meta name="description" content="Foldable">
 
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
@@ -31,7 +31,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/functor/">
+  <body class="" data-url="/foldable/">
     <nav id="sidebar" class="">
 
 
@@ -69,8 +69,8 @@
   
     
     <li data-nav-id="/functor/" title="Functor" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/functor/">
@@ -201,8 +201,8 @@
   
     
     <li data-nav-id="/foldable/" title="Foldable" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/foldable/">
@@ -293,7 +293,7 @@
             
           
           
-            <a href='/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Functor
+            <a href='/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Foldable
           
          
           
@@ -316,35 +316,38 @@
 
 
 
-<h1 id="functor">Functor</h1>
+<h1 id="foldable">Foldable</h1>
 
-<p><img src="container.gif" alt="container" /></p>
+<p>A value which has a Foldable must provide a reduce method. The reduce method takes two arguments:</p>
 
-<p><strong>So, What are Functors?</strong>
-Functors are the containers or type that can be used with ‘map’ function.</p>
+<p><code>u.reduce(f, x)</code></p>
 
 <h2 id="graphic">Graphic</h2>
 
 <div class="mermaid" align="center">
 graph LR;
-    A[Functor]
+    A[Foldable]
 </div>
 
 
 <h2 id="example">Example:</h2>
 
-<pre><code class="language-js">Container.prototype.map = (f) =&gt; {
-  return Container.of(f(this.$value));
-};
+<h3 id="ramda">Ramda:</h3>
 
-Container.of(2).map(two =&gt; two + 2);
+<pre><code class="language-js">const toArray xs =&gt; xs.reduce(
+  (acc, x) =&gt; acc.concat([x]), []
+)
+
+u.reduce(f) === toArray(u).reduce(f)
 </code></pre>
 
-<pre><code class="language-js">[1, 2, 3].map((num) =&gt; num + 2);
-</code></pre>
+<hr />
 
-<p>Read more:
-- <a href="https://hackernoon.com/functors-in-javascript-20a647b8f39f">https://hackernoon.com/functors-in-javascript-20a647b8f39f</a></p>
+<h4 id="read-more">Read More:</h4>
+
+<ul>
+<li><a href="http://www.tomharding.me/2017/05/01/fantas-eel-and-specification-11/">http://www.tomharding.me/2017/05/01/fantas-eel-and-specification-11/</a></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -384,23 +387,6 @@ Container.of(2).map(two =&gt; two + 2);
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -500,6 +486,26 @@ Container.of(2).map(two =&gt; two + 2);
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -518,10 +524,10 @@ Container.of(2).map(two =&gt; two + 2);
 
 
         
-            <a class="nav nav-prev" href="/" title="Functional Programming (Fantasy Land JavaScript specification Guide)"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/alt/" title="Alt"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/setoid/" title="Setoid" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/traversable/" title="Traversable" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

@@ -9,26 +9,28 @@ pre = "<b>2. </b>"
 # Setoid
 A value which has a Setoid must provide an equals method. The equals method takes one argument:
 
-Make array to Setoid:
+## Graphic
+{{<mermaid align="center">}}
+graph LR;
+    A[Setoid]
+{{</mermaid>}}
+
+## Example:
+
+### Ramda:
 ```js
-Array.prototype.equals = (arr) => {
-  const len = this.length
+import { equals } from 'ramda'
 
-  if (len !== arr.length) {
-    return false
-  }
+equals([1, 2], [1, 2]) // true
+equals([1, 2], [0]) // false
+```
 
-  for (let i = 0; i < len; i++) {
-    if (this[i] !== arr[i]) {
-      return false
-    }
-  }
+### Ramda (currying):
+```js
+import { equals } from 'ramda'
 
-  return true
-}
-
-;[1, 2].equals([1, 2]) // true
-;[1, 2].equals([0]) // false
+equals([1, 2])([1, 2]) // true
+equals([1, 2])([0]) // false
 ```
 
 ---
