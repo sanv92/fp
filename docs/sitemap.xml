@@ -23,15 +23,51 @@
   </url>
   
   <url>
-    <loc>/fp/alt/</loc>
-  </url>
-  
-  <url>
     <loc>/fp/foldable/</loc>
   </url>
   
   <url>
     <loc>/fp/traversable/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/contravariant/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/apply/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/applicative/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/alt_plus_and_alternative/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/chain/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/chainrec/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/monad/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/extend/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/comonad/</loc>
+  </url>
+  
+  <url>
+    <loc>/fp/bifunctor_and_profunctor/</loc>
   </url>
   
   <url>

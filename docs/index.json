@@ -25,21 +25,14 @@
 	"title": "Semigroup",
 	"tags": [],
 	"description": "Semigroup",
-	"content": " Semigroup Graphic graph LR; A[Semigroup]  Semigroup must have a concat method. The concat method takes one argument: s.concat(b)\nA Semigroup’s concat method must take another value of the same type, and return a third value of the same type.\nExamples JavaScript’s \u0026ldquo;String\u0026rdquo; type is already semigroup: // 'hello, world!' 'hello'.concat(', world!') // This operation is associative, too! 'hello'.concat(', ').concat('world!') 'hello'.concat(', '.concat('world!'))  JavaScript’s \u0026ldquo;Arrays\u0026rdquo; are already valid semigroups, too: [1, 2].concat([3, 4]) // [1, 2, 3, 4] // Aaand it's associative! [1].concat([2, 3]).concat([4]) [1].concat([2, 3].concat([4]))  Read More:  http://www.tomharding.me/2017/03/13/fantas-eel-and-specification-4/  "
+	"content": " Semigroup Graphic graph LR; A[Semigroup]  Semigroup must have a concat method. The concat method takes one argument: s.concat(b)\nA Semigroup’s concat method must take another value of the same type, and return a third value of the same type.\nExamples JavaScript’s \u0026ldquo;String\u0026rdquo; type is already semigroup: // 'hello, world!' 'hello'.concat(', world!') // This operation is associative, too! 'hello'.concat(', ').concat('world!') 'hello'.concat(', '.concat('world!'))  JavaScript’s \u0026ldquo;Arrays\u0026rdquo; are already valid semigroups, too: [1, 2].concat([3, 4]) // [1, 2, 3, 4] // Aaand it's associative! [1].concat([2, 3]).concat([4]) [1].concat([2, 3].concat([4]))  Concat with custom type: const Sum = (value) =\u0026gt; ({ value, concat: (y) =\u0026gt; Sum(value + y.value), empty: () =\u0026gt; Sum.empty() }) Sum.empty = () =\u0026gt; Sum(0) Sum.prototype.concat = function (that) { return Sum(this.val + that.val) } Sum(2).concat(Sum(3)).value // 5  Read More:  http://www.tomharding.me/2017/03/13/fantas-eel-and-specification-4/  "
 },
 {
 	"uri": "/fp/monoid/",
 	"title": "Monoid",
 	"tags": [],
 	"description": "Monoid",
-	"content": " Monoid Graphic graph LR; A[Semigroup] -- B(Monoid)  BUT not every semigroup is a monoid\u0026hellip;\nRead More:  http://www.tomharding.me/2017/03/21/fantas-eel-and-specification-5/ https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html  "
-},
-{
-	"uri": "/fp/alt/",
-	"title": "Alt",
-	"tags": [],
-	"description": "Alt",
-	"content": " Alt "
+	"content": " Monoid Graphic graph LR; A[Semigroup] -- B(Monoid)  Binary operation \u0026ldquo;This is not binary data \u0026ldquo;101010\u0026rdquo;, as you thought at first time.\nThis means, that both inner data will have the same type, and when we return result, it will have also the same type and this types will be equal.\nIdentity Empty value\n// ''.concat('hello') // === 'hello'.concat('') // === 'hello' String.empty = () =\u0026gt; '' // [].concat([1, 2, 3]) // === [1, 2, 3].concat([]) // === [1, 2, 3] Array.empty = () =\u0026gt; []  Associative operation It just means that the order in which you perform the addition or multiplication of a series of numbers doesn’t matter:\n(0 + 1) + 2 = 0 + (1 + 2) (1 * 2) * 3 = 1 * (2 * 3)  With a Semigroup type, you can combine one or more values to make another, right?\nAll a monoid does is let us upgrade that to zero or more.\nAs a surprisingly good intuition, monoids encapsulate the logic of Array.reduce. That’s what they do. That’s what they’re for. That’s it right there. If you know how to reduce lists, then congratulations, you’re now a monoid warrior:\nExample: Reduce list // Sum const Sum = (value) =\u0026gt; ({ value, result: () =\u0026gt; value, concat: (y) =\u0026gt; Sum(value + y.value), empty: () =\u0026gt; Sum.empty() }) Sum.of = Sum Sum.empty = () =\u0026gt; Sum(0) const fold = (M) =\u0026gt; (xs) =\u0026gt; xs.reduce( (acc, x) =\u0026gt; acc.concat(M(x)), M.empty()) // We get here generic way, with reducible structure. fold(Sum)([1, 2, 3, 4, 5]).value // 15 fold(Product)([1, 2, 3, 4, 5]).value fold(Tax)([1, 2, 3, 4, 5]).value fold(Max)([1, 2, 3, 4, 5]).value  https://jsbin.com/betaliwena/edit?js,console,output\nParallel // In practice, you'd want a generator here... // Non-tail-recursion is expensive in JS! const chunk = xs =\u0026gt; xs.length \u0026lt; 5000 ? [xs] : [ xs.slice(0, 5000) , ... chunk(xs.slice(5000)) ] // ... You get the idea. const parallelMap = f =\u0026gt; xs =\u0026gt; xs.map(x =\u0026gt; RunThisThingOnANewThread(f, x)) // Chunk, fold in parallel, fold the result. // In practice, this would probably be async. const foldP = M =\u0026gt; xs =\u0026gt; parallelMap(fold(M))(chunk(xs)) .reduce( (xs, ys) =\u0026gt; xs.concat(ys), M.empty()) // With all that in place... // Numbers from 0 to 999,999... const bigList = [... Array(1e6)].map((_, i) =\u0026gt; i) // ... Ta-da! 499999500000 // Parallel-ready map/reduce; isn't it *neat*? foldP(Sum)(bigList).val  So, monoids let us write easily-optimised and expressive reduce operations.\nRead More:  http://www.tomharding.me/2017/03/21/fantas-eel-and-specification-5/ https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html  "
 },
 {
 	"uri": "/fp/foldable/",
@@ -54,6 +47,76 @@
 	"tags": [],
 	"description": "Traversable",
 	"content": " Traversable -\nGraphic graph LR; A[Foldable] -- C{Decision} B[Functor] -- C[Traversable]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/05/08/fantas-eel-and-specification-12/  "
+},
+{
+	"uri": "/fp/contravariant/",
+	"title": "Contravariant",
+	"tags": [],
+	"description": "Contravariant",
+	"content": " Contravariant -\nGraphic graph LR; A[Functor] -- C[Contravariant]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/04/03/fantas-eel-and-specification-7/  "
+},
+{
+	"uri": "/fp/apply/",
+	"title": "Apply",
+	"tags": [],
+	"description": "Apply",
+	"content": " Apply -\nGraphic graph LR; A[Functor] -- B[Apply]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/04/10/fantas-eel-and-specification-8/  "
+},
+{
+	"uri": "/fp/applicative/",
+	"title": "Applicative",
+	"tags": [],
+	"description": "Applicative",
+	"content": " Applicative Applicative types are Apply types with one extra function, which we define in Fantasy Land as \u0026ldquo;of\u0026ldquo;:\nWith of, we can take a value, and lift it into the given Applicative. That’s it! In the wild, most Apply types you practically use will also be Applicative.\nGraphic graph LR; A[Functor] -- B[Apply] B -- C[Applicative]  Example: const Container = function(x) { this.__value = x } Container.of = x =\u0026gt; new Container(x) Container.prototype.map = function(f) { return Container.of(f(this.__value)) } Container.of(2).map((two) =\u0026gt; two + 2); // Container {__value: 4}  Read More:  http://www.tomharding.me/2017/04/17/fantas-eel-and-specification-9/  "
+},
+{
+	"uri": "/fp/alt_plus_and_alternative/",
+	"title": "Alt, Plus, and Alternative",
+	"tags": [],
+	"description": "Alt, Plus, and Alternative",
+	"content": " Alt, Plus, and Alternative -\nGraphic graph LR; A[Alt] -- B[Plus] B -- D[Alternative] C[Applicative] -- D[Alternative]  Example: -  Read More:  http://www.tomharding.me/2017/04/24/fantas-eel-and-specification-10/  "
+},
+{
+	"uri": "/fp/chain/",
+	"title": "Chain",
+	"tags": [],
+	"description": "Chain",
+	"content": " Chain Graphic graph LR; A[Functor] -- B[Apply] B -- D[Chain]  Each time we map with a Maybe-returning function, we call map to flatten the two Maybe layers into one. map, join, map, join, and so on.\nBack in the Traversable post, we saw that the map/sequence pattern was common enough that we gave it an alias: traverse.\nWouldn’t you know it, the same applies here: the map/join pattern is so common, we call it chain.\nExample: Before //+ join :: Maybe (Maybe a) ~\u0026gt; Maybe a Maybe.prototype.join = function () { return this.cata({ Just: x =\u0026gt; x, Nothing: () =\u0026gt; Nothing }) } prop('a')(data) // Just({ b: { c: 2 } }) .map(prop('b')).join() // Just({ c: 2 }) .map(prop('c')).join() // Just(2) prop('a')(data) // Just({ b: { c: 2 } }) .map(prop('badger')).join() // Nothing .map(prop('c')).join() // Nothing  After //+ chain :: Maybe a ~\u0026gt; (a -\u0026gt; Maybe b) //+ -\u0026gt; Maybe b Maybe.prototype.chain = function (f) { return this.cata({ Just: f, Nothing: () =\u0026gt; this // Do nothing }) } // Just like `sequence` is `traverse` with // `id`, `join` is `chain` with `id`! //+ join :: Chain m =\u0026gt; m (m a) ~\u0026gt; m a const join = xs =\u0026gt; xs.chain(x =\u0026gt; x) // Our example one more time... prop('a')(data) // Just({ b: { c: 2 } }) .chain(prop('b')) // Just({ c: 2 }) .chain(prop('c')) // Just(2)  Read More:  http://www.tomharding.me/2017/05/15/fantas-eel-and-specification-13/  "
+},
+{
+	"uri": "/fp/chainrec/",
+	"title": "ChainRec",
+	"tags": [],
+	"description": "ChainRec",
+	"content": " ChainRec Graphic graph LR; A[Functor] -- B[Apply] B -- D[Chain] D -- C[ChainRec]  Example: -  Read More:  http://www.tomharding.me/2017/05/30/fantas-eel-and-specification-14/  "
+},
+{
+	"uri": "/fp/monad/",
+	"title": "Monad",
+	"tags": [],
+	"description": "Monad",
+	"content": " Monad Graphic graph LR; A[Functor] -- B[Apply] B -- D[Alternative] D -- C[Monad] Z[Chain] -- C[Monad] B -- Z[Chain]  A Monad is a type that is both a Chain and an Applicative.\nMonads: Maybe, Either, IO\nRead More:  http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/  "
+},
+{
+	"uri": "/fp/extend/",
+	"title": "Extend",
+	"tags": [],
+	"description": "Extend",
+	"content": " Extend -\nGraphic graph LR; A[Functor] -- C[Extend]  Example: -  Read More:  http://www.tomharding.me/2017/06/12/fantas-eel-and-specification-16/  "
+},
+{
+	"uri": "/fp/comonad/",
+	"title": "Comonad",
+	"tags": [],
+	"description": "Comonad",
+	"content": " Extend -\nGraphic graph LR; A[Functor] -- B[Extend] B -- D[Comonad]  Example: -  Read More:  http://www.tomharding.me/2017/06/19/fantas-eel-and-specification-17/  "
+},
+{
+	"uri": "/fp/bifunctor_and_profunctor/",
+	"title": "Bifunctor and Profunctor",
+	"tags": [],
+	"description": "Bifunctor and Profunctor",
+	"content": " Bifunctor and Profunctor Graphic graph LR; A[Functor] -- B[Bifunctor]  Bifunctor (Either, Pair, Task) - class allows us to deal with two inner types (left and right!).\nExample: Either const { Left, Right } = require('fantasy-eithers') Function.prototype.map = function (f) { return x =\u0026gt; f(this(x)) } //- Where everything changes... const login = user =\u0026gt; user.name == 'Tom' ? Right(user) : Left('Boo') //- Function map === \u0026quot;piping\u0026quot;. //+ failureStream :: String //+ -\u0026gt; HTML const failureStream = (x =\u0026gt; x.toUpperCase()) .map(x =\u0026gt; x + '!') .map(x =\u0026gt; '\u0026lt;em\u0026gt;' + x + '\u0026lt;/em\u0026gt;') //+ successStream :: User //+ -\u0026gt; HTML const successStream = (x =\u0026gt; x.name) .map(x =\u0026gt; 'Hey, ' + x + '!') .map(x =\u0026gt; '\u0026lt;h1\u0026gt;' + x + '\u0026lt;/h1\u0026gt;') const user = { name: 'Tom' } console.log( //- We can now pass in our two //- possible application flows //- using `bimap`! login(user).bimap( failureStream, successStream) )  Pair ?  Task ?  Profunctor - ? graph LR; A[Functor] -- B[Profunctor]  Read More:  http://www.tomharding.me/2017/06/26/fantas-eel-and-specification-18/  "
 },
 {
 	"uri": "/fp/categories/",

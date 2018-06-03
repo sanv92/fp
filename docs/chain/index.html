@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Ord</title>
-    <meta name="description" content="Ord">
+    <title>Chain</title>
+    <meta name="description" content="Chain">
 
 
     <link rel="shortcut icon" href="/fp/images/favicon.png" type="image/x-icon" />
@@ -31,7 +31,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fp/ord/">
+  <body class="" data-url="/fp/chain/">
     <nav id="sidebar" class="">
 
 
@@ -113,8 +113,8 @@
   
     
     <li data-nav-id="/fp/ord/" title="Ord" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/fp/ord/">
@@ -311,8 +311,8 @@
   
     
     <li data-nav-id="/fp/chain/" title="Chain" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/fp/chain/">
@@ -491,7 +491,7 @@
             
           
           
-            <a href='/fp/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Ord
+            <a href='/fp/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Chain
           
          
           
@@ -514,51 +514,73 @@
 
 
 
-<h1 id="ord">Ord</h1>
-
-<p>Ord is almost identical to Setoid’s equals,
-the only difference is that, this time, we return a boolean to indicate whether <code>this &lt;= that</code>,
-rather than <code>this == that</code>. Using only <strong>lte</strong> and <strong>equals</strong> (because every Ord is a Setoid),
-we can derive all the things we might want:</p>
+<h1 id="chain">Chain</h1>
 
 <h2 id="graphic">Graphic</h2>
 
 <div class="mermaid" align="center">
 graph LR;
-    A[Setoid] --> B(Ord)
+    A[Functor] --> B[Apply]
+    B --> D[Chain]
 </div>
 
 
-<h2 id="example">Example</h2>
+<p>Each time we <strong>map</strong> with a Maybe-returning function, we call <strong>map</strong> to flatten the two Maybe layers into one. <strong>map, join, map, join</strong>, and so on.</p>
 
-<pre><code class="language-js">import { equals } from 'ramda'
+<p>Back in the Traversable post, we saw that the map/sequence pattern was common enough that we gave it an alias: traverse.</p>
 
-// Greater than. The OPPOSITE of lte.
-// gt :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const gt = (x, y) =&gt; {
-  return !lte(x, y)
+<p>Wouldn’t you know it, the same applies here: the <strong>map/join</strong> pattern is so common, we call it <strong>chain</strong>.</p>
+
+<h2 id="example">Example:</h2>
+
+<h3 id="before">Before</h3>
+
+<pre><code class="language-js">//+ join :: Maybe (Maybe a) ~&gt; Maybe a
+Maybe.prototype.join = function () {
+  return this.cata({
+    Just: x =&gt; x,
+    Nothing: () =&gt; Nothing
+  })
 }
 
-// Greater than or equal.
-// gte :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const gte = (x, y) =&gt; {
-  return gt(x, y) || equals(x)(y)
-}
+prop('a')(data) // Just({ b: { c: 2 } })
+.map(prop('b')).join() // Just({ c: 2 })
+.map(prop('c')).join() // Just(2)
 
-// Less than. The OPPOSITE of gte!
-// lt :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const lt = (x, y) =&gt; {
-  return !gte(x, y)
-}
-
-// lte :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const lte = (x, y) =&gt; {
-  return x &lt;= y
-}
+prop('a')(data) // Just({ b: { c: 2 } })
+.map(prop('badger')).join() // Nothing
+.map(prop('c')).join() // Nothing
 </code></pre>
 
-<p>Read more:
-- <a href="http://www.tomharding.me/2017/04/09/fantas-eel-and-specification-3.5/">http://www.tomharding.me/2017/04/09/fantas-eel-and-specification-3.5/</a></p>
+<h3 id="after">After</h3>
+
+<pre><code class="language-js">//+ chain :: Maybe a ~&gt; (a -&gt; Maybe b)
+//+                  -&gt; Maybe b
+Maybe.prototype.chain = function (f) {
+  return this.cata({
+    Just: f,
+    Nothing: () =&gt; this // Do nothing
+  })
+}
+
+// Just like `sequence` is `traverse` with
+// `id`,  `join` is `chain` with `id`!
+//+ join :: Chain m =&gt; m (m a) ~&gt; m a
+const join = xs =&gt; xs.chain(x =&gt; x)
+
+// Our example one more time...
+prop('a')(data) // Just({ b: { c: 2 } })
+.chain(prop('b')) // Just({ c: 2 })
+.chain(prop('c')) // Just(2)
+</code></pre>
+
+<hr />
+
+<h4 id="read-more">Read More:</h4>
+
+<ul>
+<li><a href="http://www.tomharding.me/2017/05/15/fantas-eel-and-specification-13/">http://www.tomharding.me/2017/05/15/fantas-eel-and-specification-13/</a></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -633,26 +655,6 @@ const lte = (x, y) =&gt; {
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -797,6 +799,26 @@ const lte = (x, y) =&gt; {
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -879,10 +901,10 @@ const lte = (x, y) =&gt; {
 
 
         
-            <a class="nav nav-prev" href="/fp/setoid/" title="Setoid"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/fp/alt_plus_and_alternative/" title="Alt, Plus, and Alternative"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/fp/semigroup/" title="Semigroup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/fp/chainrec/" title="ChainRec" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

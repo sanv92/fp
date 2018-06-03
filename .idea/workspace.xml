@@ -2,7 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/alt_plus_and_alternative/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/applicative/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/apply/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/bifunctor_and_profunctor/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/chain/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/chainrec/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/comonad/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/contravariant/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/extend/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/monad/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/alt/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/monoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monoid/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/semigroup/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semigroup/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/aaa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/alt/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/alt/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/categories/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/categories/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/auto-complete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/featherlight.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/hugo-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/hybrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/nucleus.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/perfect-scrollbar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/theme-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/theme-green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/theme-red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/foldable/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/foldable/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/fp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/functor/container.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/functor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/functor/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/clippy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/gopher-404.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/auto-complete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/clipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/featherlight.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/html5shiv-printshiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/hugo-learn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/jquery-2.x.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/jquery.sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/learn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/modernizr.custom.71422.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/perfect-scrollbar.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/js/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.forest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/monoid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/monoid/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ord/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ord/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/semigroup/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/semigroup/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/setoid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/setoid/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sitemap.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tags/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tags/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/traversable/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/traversable/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/aaa.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,56 +123,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/_index.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-            </state>
-          </provider>
+      <file leaf-file-name="chapter.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/archetypes/chapter.md">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="_index.en.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/content/basics/_index.en.md">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/traversable/_index.md">
+        <entry file="file://$PROJECT_DIR$/content/contravariant/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/functor/_index.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/alt/_index.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/setoid/_index.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" selection-start-line="35" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/semigroup/_index.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="42" selection-start-line="42" selection-end-line="45" />
+            <state relative-caret-position="210">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -71,26 +145,35 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="191">
+              <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/foldable/_index.md">
+        <entry file="file://$PROJECT_DIR$/content/semigroup/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="95">
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/ord/_index.md">
+        <entry file="file://$PROJECT_DIR$/content/monad/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/functor/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -104,12 +187,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="_index.fr.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/content/basics/_index.fr.md">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="default.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/archetypes/default.md">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>languageCode</find>
-      <find>xxx</find>
       <find>css</find>
       <find>learn.js</find>
       <find>hugo-theme-learn</find>
@@ -132,13 +224,21 @@
       <find>ramda</find>
       <find>https://medium.com/devschacht/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-fantasy-land-bf81121b58cb</find>
       <find>https://github.com/fantasyland/fantasy-land</find>
+      <find>Contravariant</find>
+      <find>Contrav</find>
+      <find>Contravariant§</find>
+      <find>Either</find>
+      <find>bimap</find>
+      <find>contravariant</find>
+      <find>xxx</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/themes/hugo-theme-learn</dir>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/themes/hugo-theme-learn/layouts</dir>
       <dir>$PROJECT_DIR$/themes</dir>
       <dir>$PROJECT_DIR$/docs</dir>
+      <dir>$PROJECT_DIR$/content</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -166,11 +266,23 @@
         <option value="$PROJECT_DIR$/content/setoid/_index.md" />
         <option value="$PROJECT_DIR$/content/ord/_index.md" />
         <option value="$PROJECT_DIR$/content/functor/_index.md" />
-        <option value="$PROJECT_DIR$/content/semigroup/_index.md" />
         <option value="$PROJECT_DIR$/content/foldable/_index.md" />
         <option value="$PROJECT_DIR$/content/_index.md" />
-        <option value="$PROJECT_DIR$/content/monoid/_index.md" />
         <option value="$PROJECT_DIR$/content/traversable/_index.md" />
+        <option value="$PROJECT_DIR$/content/Contravariant/_index.md" />
+        <option value="$PROJECT_DIR$/content/apply/_index.md" />
+        <option value="$PROJECT_DIR$/content/applicative/_index.md" />
+        <option value="$PROJECT_DIR$/content/alt_plus_and_alternative/_index.md" />
+        <option value="$PROJECT_DIR$/content/contravariant11/_index.md" />
+        <option value="$PROJECT_DIR$/content/chain/_index.md" />
+        <option value="$PROJECT_DIR$/content/chainrec/_index.md" />
+        <option value="$PROJECT_DIR$/content/monad/_index.md" />
+        <option value="$PROJECT_DIR$/content/bifunctor_and_profunctor/_index.md" />
+        <option value="$PROJECT_DIR$/content/extend/_index.md" />
+        <option value="$PROJECT_DIR$/content/comonad/_index.md" />
+        <option value="$PROJECT_DIR$/content/contravariant/_index.md" />
+        <option value="$PROJECT_DIR$/content/monoid/_index.md" />
+        <option value="$PROJECT_DIR$/content/semigroup/_index.md" />
         <option value="$PROJECT_DIR$/config.toml" />
       </list>
     </option>
@@ -212,7 +324,8 @@
             <path>
               <item name="fp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fp" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="semigroup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,18 +337,20 @@
   <component name="PropertiesComponent">
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/content/functor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/traversable" />
-      <recent name="$PROJECT_DIR$/content/foldable" />
-      <recent name="$PROJECT_DIR$/content/ord" />
-      <recent name="$PROJECT_DIR$/content/functor" />
-      <recent name="$PROJECT_DIR$/content/monoid" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/content/comonad" />
+      <recent name="$PROJECT_DIR$/content/extend" />
+      <recent name="$PROJECT_DIR$/content/bifunctor_and_profunctor" />
+      <recent name="$PROJECT_DIR$/content/monad" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,15 +370,16 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50143063" side_tool="true" weight="0.59827834" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" visible="true" weight="0.56958395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" visible="true" weight="0.35007173" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -272,7 +388,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -307,96 +422,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/i18n/es.toml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/i18n/fr.toml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/i18n/pt.toml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/_default/list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/_default/single.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ananke/theme.toml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-413" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/terms.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/taxonomy.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/_default/list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/ananke/layouts/page/single.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/static/js/learn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1797" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="64" column="31" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/wercker.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/theme.toml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/LICENSE.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/meta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="106" selection-start-column="95" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/static/mermaid/mermaid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="18" column="32100" selection-start-line="18" selection-start-column="32100" selection-end-line="18" selection-end-column="32100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/logo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/layouts/404.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -445,27 +470,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/aaa.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/functor/my-first-post.md" />
     <entry file="file://$PROJECT_DIR$/content/posts/_index.md" />
     <entry file="file://$PROJECT_DIR$/content/posts/my-first-post.md" />
-    <entry file="file://$PROJECT_DIR$/.gitmodules">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/aaa.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/fp.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -481,20 +493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/fp.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/alt/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/functor/_index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -505,6 +507,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/foldable/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/traversable/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/setoid/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -512,19 +528,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/semigroup/_index.md">
+    <entry file="file://$PROJECT_DIR$/content/apply/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" selection-start-line="42" selection-end-line="45" />
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/foldable/_index.md">
+    <entry file="file://$PROJECT_DIR$/content/applicative/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/alt_plus_and_alternative/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/chain/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/chainrec/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/bifunctor_and_profunctor/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/extend/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/aaa.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/alt/index.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/alt/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/categories/index.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/functor/container.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/comonad/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/contravariant/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/ord/_index.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archetypes/default.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/fp.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/_index.md">
       <provider selected="true" editor-type-id="text-editor">
@@ -533,17 +630,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
+    <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/traversable/_index.md">
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/archetypes/default.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/archetypes/chapter.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/content/basics/_index.fr.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/content/basics/_index.en.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/contravariant/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/monad/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/functor/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/semigroup/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
         </state>
       </provider>
     </entry>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Ord</title>
-    <meta name="description" content="Ord">
+    <title>Bifunctor and Profunctor</title>
+    <meta name="description" content="Bifunctor and Profunctor">
 
 
     <link rel="shortcut icon" href="/fp/images/favicon.png" type="image/x-icon" />
@@ -31,7 +31,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/fp/ord/">
+  <body class="" data-url="/fp/bifunctor_and_profunctor/">
     <nav id="sidebar" class="">
 
 
@@ -113,8 +113,8 @@
   
     
     <li data-nav-id="/fp/ord/" title="Ord" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/fp/ord/">
@@ -421,8 +421,8 @@
   
     
     <li data-nav-id="/fp/bifunctor_and_profunctor/" title="Bifunctor and Profunctor" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/fp/bifunctor_and_profunctor/">
@@ -491,7 +491,7 @@
             
           
           
-            <a href='/fp/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Ord
+            <a href='/fp/'>Functional Programming (Fantasy Land JavaScript specification Guide)</a> > Bifunctor and Profunctor
           
          
           
@@ -514,51 +514,85 @@
 
 
 
-<h1 id="ord">Ord</h1>
-
-<p>Ord is almost identical to Setoid’s equals,
-the only difference is that, this time, we return a boolean to indicate whether <code>this &lt;= that</code>,
-rather than <code>this == that</code>. Using only <strong>lte</strong> and <strong>equals</strong> (because every Ord is a Setoid),
-we can derive all the things we might want:</p>
+<h1 id="bifunctor-and-profunctor">Bifunctor and Profunctor</h1>
 
 <h2 id="graphic">Graphic</h2>
 
 <div class="mermaid" align="center">
 graph LR;
-    A[Setoid] --> B(Ord)
+    A[Functor] --> B[Bifunctor]
 </div>
 
 
-<h2 id="example">Example</h2>
+<p><strong>Bifunctor</strong> (Either, Pair, Task) - class allows us to deal with two inner types (left and right!).</p>
 
-<pre><code class="language-js">import { equals } from 'ramda'
+<h2 id="example">Example:</h2>
 
-// Greater than. The OPPOSITE of lte.
-// gt :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const gt = (x, y) =&gt; {
-  return !lte(x, y)
+<h3 id="either">Either</h3>
+
+<pre><code class="language-js">const { Left, Right } = require('fantasy-eithers')
+
+Function.prototype.map = function (f) {
+    return x =&gt; f(this(x))
 }
 
-// Greater than or equal.
-// gte :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const gte = (x, y) =&gt; {
-  return gt(x, y) || equals(x)(y)
-}
+//- Where everything changes...
+const login = user =&gt;
+  user.name == 'Tom'
+  ? Right(user)
+  : Left('Boo')
 
-// Less than. The OPPOSITE of gte!
-// lt :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const lt = (x, y) =&gt; {
-  return !gte(x, y)
-}
+//- Function map === &quot;piping&quot;.
+//+ failureStream :: String
+//+               -&gt; HTML
+const failureStream =
+  (x =&gt; x.toUpperCase())
+  .map(x =&gt; x + '!')
+  .map(x =&gt; '&lt;em&gt;' + x + '&lt;/em&gt;')
 
-// lte :: Ord a =&gt; a -&gt; a -&gt; Boolean
-const lte = (x, y) =&gt; {
-  return x &lt;= y
-}
+//+ successStream :: User
+//+               -&gt; HTML
+const successStream =
+  (x =&gt; x.name)
+  .map(x =&gt; 'Hey, ' + x + '!')
+  .map(x =&gt; '&lt;h1&gt;' + x + '&lt;/h1&gt;')
+
+const user = { name: 'Tom' }
+
+console.log(
+  //- We can now pass in our two
+  //- possible application flows
+  //- using `bimap`!
+  login(user).bimap(
+    failureStream,
+    successStream)
+)
 </code></pre>
 
-<p>Read more:
-- <a href="http://www.tomharding.me/2017/04/09/fantas-eel-and-specification-3.5/">http://www.tomharding.me/2017/04/09/fantas-eel-and-specification-3.5/</a></p>
+<h3 id="pair">Pair</h3>
+
+<pre><code class="language-js">?
+</code></pre>
+
+<h3 id="task">Task</h3>
+
+<pre><code class="language-js">?
+</code></pre>
+
+<p><strong>Profunctor</strong> - ?
+<div class="mermaid" align="center">
+graph LR;
+    A[Functor] --> B[Profunctor]
+</div>
+</p>
+
+<hr />
+
+<h4 id="read-more">Read More:</h4>
+
+<ul>
+<li><a href="http://www.tomharding.me/2017/06/26/fantas-eel-and-specification-18/">http://www.tomharding.me/2017/06/26/fantas-eel-and-specification-18/</a></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -633,26 +667,6 @@ const lte = (x, y) =&gt; {
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -872,6 +886,23 @@ const lte = (x, y) =&gt; {
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
         
@@ -879,10 +910,10 @@ const lte = (x, y) =&gt; {
 
 
         
-            <a class="nav nav-prev" href="/fp/setoid/" title="Setoid"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/fp/comonad/" title="Comonad"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/fp/semigroup/" title="Semigroup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/fp/functor/" title="Functor" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

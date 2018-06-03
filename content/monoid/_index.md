@@ -7,7 +7,6 @@ pre = "<b>5. </b>"
 +++
 
 # Monoid
-
 ## Graphic
 {{<mermaid align="center">}}
 graph LR;
@@ -15,7 +14,100 @@ graph LR;
 {{</mermaid>}}
 
 
-BUT not every semigroup is a monoid...
+### Binary operation
+*"This is not binary data "101010", as you thought at first time*.
+
+This means, that both inner data will have the same type, and when we return result, it will have also the same type
+and this types will be equal.
+
+### Identity
+Empty value
+```
+// ''.concat('hello')
+//   === 'hello'.concat('')
+//   === 'hello'
+String.empty  = () => ''
+
+// [].concat([1, 2, 3])
+//   === [1, 2, 3].concat([])
+//   === [1, 2, 3]
+Array.empty   = () => []
+```
+
+### Associative operation
+It just means that the order in which you perform the addition or multiplication of a series of numbers doesn’t matter:
+```
+(0 + 1) + 2 = 0 + (1 + 2)
+(1 * 2) * 3 = 1 * (2 * 3)
+```
+
+---
+
+With a Semigroup type, you can combine one or more values to make another, right?
+
+All a monoid does is let us upgrade that to zero or more.
+
+
+As a surprisingly good intuition, monoids encapsulate the logic of Array.reduce. That’s what they do. That’s what they’re for. That’s it right there. If you know how to reduce lists, then congratulations, you’re now a monoid warrior:
+
+## Example:
+### Reduce list
+```js
+// Sum
+const Sum = (value) => ({
+  value,
+  result: () => value,
+  concat: (y) => Sum(value + y.value),
+  empty: () => Sum.empty()
+})
+
+Sum.of = Sum
+Sum.empty = () => Sum(0)
+
+const fold = (M) => (xs) => xs.reduce(
+  (acc, x) => acc.concat(M(x)),
+  M.empty())
+
+// We get here generic way, with reducible structure.
+fold(Sum)([1, 2, 3, 4, 5]).value // 15
+fold(Product)([1, 2, 3, 4, 5]).value
+fold(Tax)([1, 2, 3, 4, 5]).value
+fold(Max)([1, 2, 3, 4, 5]).value
+```
+https://jsbin.com/betaliwena/edit?js,console,output
+
+### Parallel
+```js
+// In practice, you'd want a generator here...
+// Non-tail-recursion is expensive in JS!
+const chunk = xs => xs.length < 5000
+  ? [xs] : [ xs.slice(0, 5000)
+           , ... chunk(xs.slice(5000)) ]
+
+// ... You get the idea.
+const parallelMap = f => xs => xs.map(x =>
+  RunThisThingOnANewThread(f, x))
+
+// Chunk, fold in parallel, fold the result.
+// In practice, this would probably be async.
+const foldP = M => xs =>
+  parallelMap(fold(M))(chunk(xs))
+  .reduce(
+    (xs, ys) => xs.concat(ys),
+    M.empty())
+
+// With all that in place...
+
+// Numbers from 0 to 999,999...
+const bigList = [... Array(1e6)].map((_, i) => i)
+
+// ... Ta-da! 499999500000
+// Parallel-ready map/reduce; isn't it *neat*?
+foldP(Sum)(bigList).val
+```
+---
+
+So, monoids let us write easily-optimised and expressive reduce operations.
 
 ---
 #### Read More:

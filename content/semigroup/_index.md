@@ -40,6 +40,23 @@ A Semigroup’s concat method must take another value of the same type, and retu
 [1].concat([2, 3].concat([4]))
 ```
 
+### Concat with custom type:
+```js
+const Sum = (value) => ({
+  value,
+  concat: (y) => Sum(value + y.value),
+  empty: () => Sum.empty()
+})
+
+Sum.empty = () => Sum(0)
+
+Sum.prototype.concat = function (that) {
+  return Sum(this.val + that.val)
+}
+
+Sum(2).concat(Sum(3)).value // 5
+```
+
 ---
 #### Read More:
 - http://www.tomharding.me/2017/03/13/fantas-eel-and-specification-4/
