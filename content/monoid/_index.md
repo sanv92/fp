@@ -52,29 +52,8 @@ As a surprisingly good intuition, monoids encapsulate the logic of Array.reduce.
 
 ## Example:
 ### Reduce list
-```js
-// Sum
-const Sum = (value) => ({
-  value,
-  result: () => value,
-  concat: (y) => Sum(value + y.value),
-  empty: () => Sum.empty()
-})
-
-Sum.of = Sum
-Sum.empty = () => Sum(0)
-
-const fold = (M) => (xs) => xs.reduce(
-  (acc, x) => acc.concat(M(x)),
-  M.empty())
-
-// We get here generic way, with reducible structure.
-fold(Sum)([1, 2, 3, 4, 5]).value // 15
-fold(Product)([1, 2, 3, 4, 5]).value
-fold(Tax)([1, 2, 3, 4, 5]).value
-fold(Max)([1, 2, 3, 4, 5]).value
-```
-https://jsbin.com/betaliwena/edit?js,console,output
+<p data-height="265" data-theme-id="0" data-slug-hash="ERPmpE" data-default-tab="html,result" data-user="sanderv1992" data-embed-version="2" data-pen-title="kkk" class="codepen">See the Pen <a href="https://codepen.io/sanderv1992/pen/ERPmpE/">kkk</a> by SanderV1992 (<a href="https://codepen.io/sanderv1992">@sanderv1992</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ### Parallel
 ```js

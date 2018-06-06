@@ -2,116 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/content/alt_plus_and_alternative/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/applicative/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/apply/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/bifunctor_and_profunctor/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/chain/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/chainrec/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/comonad/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/contravariant/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/extend/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/monad/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/alt/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/monoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monoid/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semigroup/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semigroup/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/aaa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/alt/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/alt/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/categories/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/categories/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/auto-complete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/featherlight.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/hugo-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/hybrid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/nucleus.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/perfect-scrollbar.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/theme-blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/theme-green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/theme-red.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/foldable/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/foldable/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Inconsolata.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-Normal-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Novecentosanswide-UltraLight-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_200.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_300.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/Work_Sans_500.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/fp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/functor/container.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/functor/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/functor/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/clippy.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/gopher-404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/auto-complete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/clipboard.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/featherlight.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/highlight.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/html5shiv-printshiv.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/hugo-learn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/jquery-2.x.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/jquery.sticky.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/learn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/lunr.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/modernizr.custom.71422.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/perfect-scrollbar.jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/perfect-scrollbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.dark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.forest.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/mermaid/mermaid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/monoid/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/monoid/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ord/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/ord/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/semigroup/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/semigroup/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/setoid/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/setoid/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/traversable/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/traversable/index.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/aaa.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,6 +16,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="chapter.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/archetypes/chapter.md">
           <provider selected="true" editor-type-id="text-editor" />
@@ -145,8 +47,8 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="-2">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -189,11 +91,6 @@
       </file>
       <file leaf-file-name="_index.fr.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/content/basics/_index.fr.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="default.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/archetypes/default.md">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -267,7 +164,6 @@
         <option value="$PROJECT_DIR$/content/ord/_index.md" />
         <option value="$PROJECT_DIR$/content/functor/_index.md" />
         <option value="$PROJECT_DIR$/content/foldable/_index.md" />
-        <option value="$PROJECT_DIR$/content/_index.md" />
         <option value="$PROJECT_DIR$/content/traversable/_index.md" />
         <option value="$PROJECT_DIR$/content/Contravariant/_index.md" />
         <option value="$PROJECT_DIR$/content/apply/_index.md" />
@@ -281,8 +177,9 @@
         <option value="$PROJECT_DIR$/content/extend/_index.md" />
         <option value="$PROJECT_DIR$/content/comonad/_index.md" />
         <option value="$PROJECT_DIR$/content/contravariant/_index.md" />
-        <option value="$PROJECT_DIR$/content/monoid/_index.md" />
         <option value="$PROJECT_DIR$/content/semigroup/_index.md" />
+        <option value="$PROJECT_DIR$/content/monoid/_index.md" />
+        <option value="$PROJECT_DIR$/content/_index.md" />
         <option value="$PROJECT_DIR$/config.toml" />
       </list>
     </option>
@@ -325,7 +222,7 @@
               <item name="fp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fp" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="semigroup" type="462c0819:PsiDirectoryNode" />
+              <item name="monoid" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,7 +272,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" visible="true" weight="0.56958395" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" weight="0.56958395" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -623,13 +520,6 @@
     <entry file="file://$PROJECT_DIR$/content/fp.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/_index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -670,17 +560,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/semigroup/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
