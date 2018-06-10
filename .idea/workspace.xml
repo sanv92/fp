@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/ord/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/ord/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +24,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chapter.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/archetypes/chapter.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="_index.en.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/content/basics/_index.en.md">
           <provider selected="true" editor-type-id="text-editor" />
@@ -44,7 +41,7 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
+            <state relative-caret-position="840">
               <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
@@ -86,6 +83,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/ord/_index.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_index.fr.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/hugo-theme-learn/exampleSite/content/basics/_index.fr.md">
           <provider selected="true" editor-type-id="text-editor" />
@@ -95,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>languageCode</find>
       <find>css</find>
       <find>learn.js</find>
       <find>hugo-theme-learn</find>
@@ -125,6 +130,7 @@
       <find>bimap</find>
       <find>contravariant</find>
       <find>xxx</find>
+      <find>identical</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/themes/hugo-theme-learn</dir>
@@ -158,7 +164,6 @@
         <option value="$PROJECT_DIR$/deploy.sh" />
         <option value="$PROJECT_DIR$/content/alt/_index.md" />
         <option value="$PROJECT_DIR$/content/setoid/_index.md" />
-        <option value="$PROJECT_DIR$/content/ord/_index.md" />
         <option value="$PROJECT_DIR$/content/functor/_index.md" />
         <option value="$PROJECT_DIR$/content/foldable/_index.md" />
         <option value="$PROJECT_DIR$/content/traversable/_index.md" />
@@ -177,6 +182,7 @@
         <option value="$PROJECT_DIR$/content/semigroup/_index.md" />
         <option value="$PROJECT_DIR$/content/monoid/_index.md" />
         <option value="$PROJECT_DIR$/content/_index.md" />
+        <option value="$PROJECT_DIR$/content/ord/_index.md" />
         <option value="$PROJECT_DIR$/config.toml" />
       </list>
     </option>
@@ -219,7 +225,7 @@
               <item name="fp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fp" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="monoid" type="462c0819:PsiDirectoryNode" />
+              <item name="ord" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -261,6 +267,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="794" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -268,8 +275,8 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" visible="true" weight="0.56958395" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" weight="0.56958395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -507,9 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/ord/_index.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/archetypes/default.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -563,6 +567,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -570,10 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
+    <entry file="file://$PROJECT_DIR$/content/ord/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="300">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
