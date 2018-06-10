@@ -9,7 +9,7 @@ pre = "<b>3. </b>"
 # Ord
 - Ord type contains types, the values of which can be ordered.
 
-- Ord contain functions (>) - gt, (<) - lt, (>=) - gte, (<=) - lte,
+- Ord contain functions **(>) - gt, (<) - lt, (>=) - gte, (<=) - lte**,
 given any two values of a given Ord type,
 you can determine whether one be greater than the other.
 
