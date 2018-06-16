@@ -11,7 +11,7 @@ pre = "<b>1. </b>"
 
 ![fp](fp.png)
 
-### Read books and Articles
+### Javascript (Books and Articles)
 - http://www.tomharding.me/fantasy-land/
 - https://github.com/MostlyAdequate/mostly-adequate-guide, https://mostly-adequate.gitbooks.io/mostly-adequate-guide/
 - https://github.com/fantasyland/fantasy-land
@@ -23,15 +23,18 @@ pre = "<b>1. </b>"
 - https://medium.com/devschacht/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-fantasy-land-bf81121b58cb
 - https://medium.com/devschacht/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-fantasy-land-bf81121b58cb
 
-### Video courses (Russian)
-- https://stepik.org/course/75
-- https://stepik.org/course/693/
-
-### Libraries to write Functional Programming in JavaScript
-- https://ramdajs.com/
-
-### Haskell
+### Haskell (Books and Articles)
 - https://www.ohaskell.guide/
 - https://anton-k.github.io/ru-haskell-book/book/home.html
 - http://www.soshnikov.com/fpschool/Haskell%20and%20ADT.pdf
 - http://kspt.icc.spbstu.ru/media/files/2016/course/lang/slides/lection4.pdf
+
+### Haskell (Video courses - Russian)
+- https://stepik.org/course/75
+- https://stepik.org/course/693/
+
+### Libraries to write Functional Programming in "JavaScript"
+- https://ramdajs.com/
+
+### Libraries to write Functional Programming in "TypeScript"
+- https://github.com/gcanti/fp-ts
