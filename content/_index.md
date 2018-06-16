@@ -20,8 +20,8 @@ pre = "<b>1. </b>"
 - http://telegra.ph/Vvedenie-v-FP-06-26
 - https://drive.google.com/open?id=1Fg8fnpoyGx50v1C1FzDq8xgNo0Xb45Fo
 - https://drive.google.com/open?id=1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT
-- https://medium.com/devschacht/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-fantasy-land-bf81121b58cb
-- https://medium.com/devschacht/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-fantasy-land-bf81121b58cb
+- <a href="https://medium.com/devschacht/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-fantasy-land-bf81121b58cb">1</a>
+
 
 ### Haskell (Books and Articles)
 - https://www.ohaskell.guide/

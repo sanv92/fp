@@ -1,5 +1,5 @@
-#baseURL = "http://example.org/"
-baseURL = "/fp"
+baseURL = "http://example.org/"
+#baseURL = "/fp"
 publishDir = "docs"
 
 languageCode = "en-us"

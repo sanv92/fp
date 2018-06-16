@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monad on Functional Programming (Fantasy Land JavaScript specification Guide)</title>
-    <link>/fp/monad/</link>
+    <link>http://example.org/monad/</link>
     <description>Recent content in Monad on Functional Programming (Fantasy Land JavaScript specification Guide)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/fp/monad/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/monad/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
