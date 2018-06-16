@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chain on Functional Programming (Fantasy Land JavaScript specification Guide)</title>
-    <link>http://example.org/chain/</link>
+    <link>/fp/chain/</link>
     <description>Recent content in Chain on Functional Programming (Fantasy Land JavaScript specification Guide)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/chain/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/fp/chain/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

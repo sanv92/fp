@@ -3,84 +3,84 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/functor/</loc>
+    <loc>/fp/functor/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/setoid/</loc>
+    <loc>/fp/setoid/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/ord/</loc>
+    <loc>/fp/ord/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/semigroup/</loc>
+    <loc>/fp/semigroup/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/monoid/</loc>
+    <loc>/fp/monoid/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/foldable/</loc>
+    <loc>/fp/foldable/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/traversable/</loc>
+    <loc>/fp/traversable/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/contravariant/</loc>
+    <loc>/fp/contravariant/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/apply/</loc>
+    <loc>/fp/apply/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/applicative/</loc>
+    <loc>/fp/applicative/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/alt_plus_and_alternative/</loc>
+    <loc>/fp/alt_plus_and_alternative/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/chain/</loc>
+    <loc>/fp/chain/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/chainrec/</loc>
+    <loc>/fp/chainrec/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/monad/</loc>
+    <loc>/fp/monad/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/extend/</loc>
+    <loc>/fp/extend/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/comonad/</loc>
+    <loc>/fp/comonad/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/bifunctor_and_profunctor/</loc>
+    <loc>/fp/bifunctor_and_profunctor/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>/fp/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>/fp/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>/fp/tags/</loc>
     <priority>0</priority>
   </url>
   
