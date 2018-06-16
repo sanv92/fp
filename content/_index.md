@@ -33,8 +33,8 @@ pre = "<b>1. </b>"
 - https://stepik.org/course/75
 - https://stepik.org/course/693/
 
-### Libraries to write Functional Programming in "JavaScript"
+### JavaScript (functional libraries)
 - https://ramdajs.com/
 
-### Libraries to write Functional Programming in "TypeScript"
+### TypeScript (functional libraries)
 - https://github.com/gcanti/fp-ts
