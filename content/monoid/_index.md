@@ -92,3 +92,4 @@ So, monoids let us write easily-optimised and expressive reduce operations.
 #### Read More:
 - http://www.tomharding.me/2017/03/21/fantas-eel-and-specification-5/
 - https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html
+- https://wiki.haskell.org/Monoid
