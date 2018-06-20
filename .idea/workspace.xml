@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/foldable/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/foldable/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/monoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monoid/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +32,8 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            <state relative-caret-position="463">
+              <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -43,8 +41,8 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="1425">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
             </state>
           </provider>
         </entry>
@@ -62,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/content/foldable/_index.md">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -78,8 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>topics</find>
-      <find>topi</find>
       <find>Built with</find>
       <find>generator</find>
       <find>dist</find>
@@ -108,6 +104,8 @@
       <find>1j1IUHjiKYs3WSzgYQT294Eyro9JosoXT</find>
       <find>func</find>
       <find>habr</find>
+      <find>.PDF</find>
+      <find>Классы типов в Haskell</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/themes/hugo-theme-learn</dir>
@@ -160,9 +158,9 @@
         <option value="$PROJECT_DIR$/test.go" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/content/_index.md" />
         <option value="$PROJECT_DIR$/content/monoid/_index.md" />
         <option value="$PROJECT_DIR$/content/foldable/_index.md" />
+        <option value="$PROJECT_DIR$/content/_index.md" />
         <option value="$PROJECT_DIR$/config.toml" />
       </list>
     </option>
@@ -202,12 +200,6 @@
               <item name="fp" type="b2602c69:ProjectViewProjectNode" />
               <item name="fp" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fp" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="foldable" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,7 +244,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" weight="0.3297568" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50214595" side_tool="true" weight="0.59827834" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
@@ -272,9 +264,9 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="2" weight="0.4" />
@@ -282,14 +274,14 @@
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="right" id="PlantUML" order="1" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49928468" weight="0.5035868" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5007153" side_tool="true" weight="0.5035868" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -534,24 +526,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/_index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/foldable/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/monoid/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="1425">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/_index.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
         </state>
       </provider>
     </entry>

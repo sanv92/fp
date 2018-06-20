@@ -37,9 +37,11 @@ pre = "<b>1. </b>"
 
 ---
 
-### Haskell (Books and Articles)
+### Haskell (Books)
 - <a href="https://www.ohaskell.guide/">О Haskell по-человечески</a>
 - <a href="https://anton-k.github.io/ru-haskell-book/book/home.html">Учебник по Haskell</a>
+- <a href="http://learnyouahaskell.com/chapters">Learn You a Haskell for Great Good! (beginner's guide)</a>
+---
 - <a href="http://www.soshnikov.com/fpschool/Haskell%20and%20ADT.pdf">Язык Haskell и Алгебраические Типы Данных</a>
 - <a href="http://kspt.icc.spbstu.ru/media/files/2016/course/lang/slides/lection4.pdf">Классы типов в Haskell</a>
 
