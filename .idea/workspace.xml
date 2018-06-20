@@ -31,8 +31,8 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="66">
+              <caret line="42" column="107" selection-start-line="42" selection-start-column="107" selection-end-line="42" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -251,7 +251,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49785408" weight="0.56958395" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49785408" visible="true" weight="0.56958395" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -548,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="66">
+          <caret line="42" column="107" selection-start-line="42" selection-start-column="107" selection-end-line="42" selection-end-column="107" />
         </state>
       </provider>
     </entry>
