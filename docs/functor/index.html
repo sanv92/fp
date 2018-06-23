@@ -11,17 +11,17 @@
 <link rel="icon" href="/fp/images/favicon.png" type="image/x-icon" />
 
     
-    <link href="/fp/css/nucleus.css?1529521904" rel="stylesheet">
-    <link href="/fp/css/font-awesome.min.css?1529521904" rel="stylesheet">
-    <link href="/fp/css/hybrid.css?1529521904" rel="stylesheet">
-    <link href="/fp/css/featherlight.min.css?1529521904" rel="stylesheet">
-    <link href="/fp/css/perfect-scrollbar.min.css?1529521904" rel="stylesheet">
-    <link href="/fp/css/auto-complete.css?1529521904" rel="stylesheet">
-    <link href="/fp/css/theme.css?1529521904" rel="stylesheet">
-    <link href="/fp/css/hugo-theme.css?1529521904" rel="stylesheet">
+    <link href="/fp/css/nucleus.css?1529765909" rel="stylesheet">
+    <link href="/fp/css/font-awesome.min.css?1529765909" rel="stylesheet">
+    <link href="/fp/css/hybrid.css?1529765909" rel="stylesheet">
+    <link href="/fp/css/featherlight.min.css?1529765909" rel="stylesheet">
+    <link href="/fp/css/perfect-scrollbar.min.css?1529765909" rel="stylesheet">
+    <link href="/fp/css/auto-complete.css?1529765909" rel="stylesheet">
+    <link href="/fp/css/theme.css?1529765909" rel="stylesheet">
+    <link href="/fp/css/hugo-theme.css?1529765909" rel="stylesheet">
     
 
-    <script src="/fp/js/jquery-2.x.min.js?1529521904"></script>
+    <script src="/fp/js/jquery-2.x.min.js?1529765909"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -45,14 +45,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/fp/js/lunr.min.js?1529521904"></script>
-<script type="text/javascript" src="/fp/js/auto-complete.js?1529521904"></script>
+<script type="text/javascript" src="/fp/js/lunr.min.js?1529765909"></script>
+<script type="text/javascript" src="/fp/js/auto-complete.js?1529765909"></script>
 <script type="text/javascript">
     
         var baseurl = '\/fp';
     
 </script>
-<script type="text/javascript" src="/fp/js/search.js?1529521904"></script>
+<script type="text/javascript" src="/fp/js/search.js?1529765909"></script>
 
     
   </div>
@@ -518,8 +518,9 @@
 
 <p><img src="container.gif" alt="container" /></p>
 
-<p><strong>So, What are Functors?</strong>
-Functors are the containers or type that can be used with ‘map’ function.</p>
+<p><strong>So, What are Functors? (JavaScript)</strong></p>
+
+<p>&ldquo;Functors&rdquo; are the containers or type that can be used with <strong>&ldquo;map&rdquo;</strong> function.</p>
 
 <h2 id="graphic">Graphic</h2>
 
@@ -541,8 +542,33 @@ Container.of(2).map(two =&gt; two + 2);
 <pre><code class="language-js">[1, 2, 3].map((num) =&gt; num + 2);
 </code></pre>
 
-<p>Read more:
-- <a href="https://hackernoon.com/functors-in-javascript-20a647b8f39f">https://hackernoon.com/functors-in-javascript-20a647b8f39f</a></p>
+<hr />
+
+<p><strong>Just what is a Functor, really? (Haskell)</strong></p>
+
+<p>Functor is &ldquo;typeclass&rdquo; (A lot of people coming from OOP get confused by typeclasses because they think they are like classes in object oriented languages).</p>
+
+<p>A Functor is any data type that defines how <strong>&ldquo;fmap&rdquo;</strong> applies to it. Here&rsquo;s how <strong>&ldquo;fmap&rdquo;</strong> works:</p>
+
+<pre><code class="language-js">class Functor f where
+    fmap :: (a -&gt; b) -&gt; f a -&gt; f b
+</code></pre>
+
+<pre><code class="language-js">&gt; fmap (+3) (Just 2)
+Just 5
+</code></pre>
+
+<p><img src="fmap_just.png" alt="fmap" /></p>
+
+<hr />
+
+<h4 id="read-more">Read More:</h4>
+
+<ul>
+<li><a href="https://hackernoon.com/functors-in-javascript-20a647b8f39f">https://hackernoon.com/functors-in-javascript-20a647b8f39f</a></li>
+<li><a href="https://en.wikibooks.org/wiki/Haskell/The_Functor_class">https://en.wikibooks.org/wiki/Haskell/The_Functor_class</a></li>
+<li><a href="http://learnyouahaskell.com/types-and-typeclasses">http://learnyouahaskell.com/types-and-typeclasses</a></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -872,20 +898,20 @@ Container.of(2).map(two =&gt; two + 2);
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/fp/js/clipboard.min.js?1529521904"></script>
-    <script src="/fp/js/perfect-scrollbar.min.js?1529521904"></script>
-    <script src="/fp/js/perfect-scrollbar.jquery.min.js?1529521904"></script>
-    <script src="/fp/js/jquery.sticky.js?1529521904"></script>
-    <script src="/fp/js/featherlight.min.js?1529521904"></script>
-    <script src="/fp/js/html5shiv-printshiv.min.js?1529521904"></script>
-    <script src="/fp/js/highlight.pack.js?1529521904"></script>
+    <script src="/fp/js/clipboard.min.js?1529765909"></script>
+    <script src="/fp/js/perfect-scrollbar.min.js?1529765909"></script>
+    <script src="/fp/js/perfect-scrollbar.jquery.min.js?1529765909"></script>
+    <script src="/fp/js/jquery.sticky.js?1529765909"></script>
+    <script src="/fp/js/featherlight.min.js?1529765909"></script>
+    <script src="/fp/js/html5shiv-printshiv.min.js?1529765909"></script>
+    <script src="/fp/js/highlight.pack.js?1529765909"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/fp/js/modernizr.custom.71422.js?1529521904"></script>
-    <script src="/fp/js/learn.js?1529521904"></script>
-    <script src="/fp/js/hugo-learn.js?1529521904"></script>
+    <script src="/fp/js/modernizr.custom.71422.js?1529765909"></script>
+    <script src="/fp/js/learn.js?1529765909"></script>
+    <script src="/fp/js/hugo-learn.js?1529765909"></script>
 
-    <link href="/fp/mermaid/mermaid.css?1529521904" type="text/css" rel="stylesheet" />
-    <script src="/fp/mermaid/mermaid.js?1529521904"></script>
+    <link href="/fp/mermaid/mermaid.css?1529765909" type="text/css" rel="stylesheet" />
+    <script src="/fp/mermaid/mermaid.js?1529765909"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
