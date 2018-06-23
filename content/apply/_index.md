@@ -7,20 +7,14 @@ pre = "<b>9. </b>"
 +++
 
 # Apply
--
+All **Apply** types are Functor types, so we know they’re definitely “containers” for other types:
+
 
 ## Graphic
 {{<mermaid align="center">}}
 graph LR;
     A[Functor] --> B[Apply]
 {{</mermaid>}}
-
-## Example:
-
-### Ramda:
-```js
--
-```
 
 ---
 #### Read More:

@@ -52,7 +52,7 @@ As a surprisingly good intuition, monoids encapsulate the logic of Array.reduce.
 
 ## Example:
 ### Reduce list
-<p data-height="265" data-theme-id="0" data-slug-hash="ERPmpE" data-default-tab="html,result" data-user="sanderv1992" data-embed-version="2" data-pen-title="kkk" class="codepen">See the Pen <a href="https://codepen.io/sanderv1992/pen/ERPmpE/">kkk</a> by SanderV1992 (<a href="https://codepen.io/sanderv1992">@sanderv1992</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="0" data-slug-hash="ERPmpE" data-default-tab="js,result" data-user="sanderv1992" data-embed-version="2" data-pen-title="Monoid" class="codepen">See the Pen <a href="https://codepen.io/sanderv1992/pen/ERPmpE/">Monoid</a> by SanderV1992 (<a href="https://codepen.io/sanderv1992">@sanderv1992</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ### Parallel
