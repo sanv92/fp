@@ -31,32 +31,32 @@ Suppose **"half"** is a function that only works on even numbers:
 
 ##### Example (JavaScript):
 ```js
-const { Option, Some, None, Result } = require('@es2/result-option')
+const { Option, Some, None, Result } = require('@es2/result-option') // 0.2.0
 
 
 const half = (num) => (num % 2 === 0)
   ? Some(num / 2)
   : None()
 
-const test1 = Some(100).chain(half).unwrapOr(0)
+const test1 = Some(100).chain(half).extractOr(0)
 console.log('test1: ', test1) // 50
 
-const test1_1 = Some(2).chain(half).unwrapOr(0)
+const test1_1 = Some(2).chain(half).extractOr(0)
 console.log('test1_1: ', test1_1) // 1
 
-const test2 = Some(3).chain(half).unwrapOr(0)
+const test2 = Some(3).chain(half).extractOr(0)
 console.log('test2: ', test2) // 0
 
-const test3 = Some(4).chain(half).unwrapOr(0)
+const test3 = Some(4).chain(half).extractOr(0)
 console.log('test3: ', test3) // 2
 
-const test4 = Some(None).chain(half).unwrapOr(0)
+const test4 = Some(None).chain(half).extractOr(0)
 console.log('test4: ', test4) // 0
 
-const test5 = Some(20).chain(half).chain(half).chain(half).unwrapOr(0)
+const test5 = Some(20).chain(half).chain(half).chain(half).extractOr(0)
 console.log('test5: ', test5) // 0
 
-const test6 = Some(20).chain(half).chain(half).unwrapOr(0)
+const test6 = Some(20).chain(half).chain(half).extractOr(0)
 console.log('test6: ', test6) // 5
 ```
 
