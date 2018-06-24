@@ -7,6 +7,7 @@ pre = "<b>13. </b>"
 +++
 
 # ChainRec
+---
 ## Graphic
 {{<mermaid align="center">}}
 graph LR;

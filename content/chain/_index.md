@@ -7,6 +7,7 @@ pre = "<b>12. </b>"
 +++
 
 # Chain
+---
 ## Graphic
 {{<mermaid align="center">}}
 graph LR;

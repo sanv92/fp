@@ -7,6 +7,7 @@ pre = "<b>17. </b>"
 +++
 
 # Bifunctor and Profunctor
+---
 ## Graphic
 {{<mermaid align="center">}}
 graph LR;

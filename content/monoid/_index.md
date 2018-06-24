@@ -7,6 +7,7 @@ pre = "<b>5. </b>"
 +++
 
 # Monoid
+---
 ## Graphic
 {{<mermaid align="center">}}
 graph LR;

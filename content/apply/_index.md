@@ -7,6 +7,7 @@ pre = "<b>9. </b>"
 +++
 
 # Apply
+---
 All **Apply** types are Functor types, so we know they’re definitely “containers” for other types:
 
 

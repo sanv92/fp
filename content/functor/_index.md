@@ -7,6 +7,7 @@ pre = "<b>1. </b>"
 +++
 
 # Functor
+---
 ![container](container.gif)
 
 **So, What are Functors? (JavaScript)**

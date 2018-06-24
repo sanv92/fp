@@ -11,17 +11,17 @@
 <link rel="icon" href="/fp/images/favicon.png" type="image/x-icon" />
 
     
-    <link href="/fp/css/nucleus.css?1529790360" rel="stylesheet">
-    <link href="/fp/css/font-awesome.min.css?1529790360" rel="stylesheet">
-    <link href="/fp/css/hybrid.css?1529790360" rel="stylesheet">
-    <link href="/fp/css/featherlight.min.css?1529790360" rel="stylesheet">
-    <link href="/fp/css/perfect-scrollbar.min.css?1529790360" rel="stylesheet">
-    <link href="/fp/css/auto-complete.css?1529790360" rel="stylesheet">
-    <link href="/fp/css/theme.css?1529790360" rel="stylesheet">
-    <link href="/fp/css/hugo-theme.css?1529790360" rel="stylesheet">
+    <link href="/fp/css/nucleus.css?1529853457" rel="stylesheet">
+    <link href="/fp/css/font-awesome.min.css?1529853457" rel="stylesheet">
+    <link href="/fp/css/hybrid.css?1529853457" rel="stylesheet">
+    <link href="/fp/css/featherlight.min.css?1529853457" rel="stylesheet">
+    <link href="/fp/css/perfect-scrollbar.min.css?1529853457" rel="stylesheet">
+    <link href="/fp/css/auto-complete.css?1529853457" rel="stylesheet">
+    <link href="/fp/css/theme.css?1529853457" rel="stylesheet">
+    <link href="/fp/css/hugo-theme.css?1529853457" rel="stylesheet">
     
 
-    <script src="/fp/js/jquery-2.x.min.js?1529790360"></script>
+    <script src="/fp/js/jquery-2.x.min.js?1529853457"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -45,14 +45,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/fp/js/lunr.min.js?1529790360"></script>
-<script type="text/javascript" src="/fp/js/auto-complete.js?1529790360"></script>
+<script type="text/javascript" src="/fp/js/lunr.min.js?1529853457"></script>
+<script type="text/javascript" src="/fp/js/auto-complete.js?1529853457"></script>
 <script type="text/javascript">
     
         var baseurl = '\/fp';
     
 </script>
-<script type="text/javascript" src="/fp/js/search.js?1529790360"></script>
+<script type="text/javascript" src="/fp/js/search.js?1529853457"></script>
 
     
   </div>
@@ -514,23 +514,128 @@
 
 
 
-<h1 id="monad">Monad</h1>
+<h1 id="monad-maybe-either-io">Monad (Maybe, Either, IO)</h1>
+
+<hr />
+
+<p><strong>&ldquo;Maybe&rdquo;</strong> is a Functor, an Applicative, and a Monad,
+&ldquo;Monads&rdquo; apply a function that returns a wrapped value.</p>
 
 <h2 id="graphic">Graphic</h2>
 
-<p><div class="mermaid" align="center">
+<div class="mermaid" align="center">
 graph LR;
     A[Functor] --> B[Apply]
-    B --> D[Alternative]
+    B --> D[Applicative]
     D --> C[Monad]
 
     Z[Chain] --> C[Monad]
     B --> Z[Chain]
 </div>
 
-A Monad is a type that is both a Chain and an Applicative.</p>
 
-<p>Monads: Maybe, Either, IO</p>
+<h3 id="maybe">Maybe</h3>
+
+<p><img src="maybe.png" alt="applicative" /></p>
+
+<p>Suppose <strong>&ldquo;half&rdquo;</strong> is a function that only works on even numbers:</p>
+
+<h5 id="example-javascript">Example (JavaScript):</h5>
+
+<pre><code class="language-js">const { Option, Some, None, Result } = require('@es2/result-option')
+
+
+const half = (num) =&gt; (num % 2 === 0)
+  ? Some.of(num / 2)
+  : None()
+
+const test1 = Some.of(100).chain(half).unwrapOr(0)
+console.log('test1: ', test1)
+
+const test1_1 = Some.of(2).chain(half).unwrapOr(0)
+console.log('test1_1: ', test1_1)
+
+const test2 = Some.of(3).chain(half).unwrapOr(0)
+console.log('test2: ', test2)
+
+const test3 = Some.of(4).chain(half).unwrapOr(0)
+console.log('test3: ', test3)
+
+const test4 = Some.of(None).chain(half).unwrapOr(0)
+console.log('test4: ', test4)
+
+const test5 = Some.of(20).chain(half).chain(half).chain(half).unwrapOr(0)
+console.log('test5: ', test5)
+
+const test6 = Some.of(20).chain(half).chain(half).unwrapOr(0)
+console.log('test6: ', test6)
+</code></pre>
+
+<h5 id="example-haskell">Example (Haskell):</h5>
+
+<pre><code class="language-js">class Monad m where
+    (&gt;&gt;=) :: m a -&gt; (a -&gt; m b) -&gt; m b
+
+instance Monad Maybe where
+    Nothing &gt;&gt;= func = Nothing
+    Just val &gt;&gt;= func  = func val
+</code></pre>
+
+<pre><code class="language-js">half x = if even x
+    then Just (x `div` 2)
+    else Nothing
+
+&gt; Just 2 &gt;&gt;= half
+Just 1
+
+&gt; Just 3 &gt;&gt;= half
+Nothing
+
+&gt; Just 4 &gt;&gt;= half
+Just 2
+
+&gt; Nothing &gt;&gt;= half
+Nothing
+
+&gt; Just 20 &gt;&gt;= half &gt;&gt;= half &gt;&gt;= half
+Nothing
+
+&gt; Just 20 &gt;&gt;= half &gt;&gt;= half
+Just 5
+
+</code></pre>
+
+<hr />
+
+<h3 id="either">Either</h3>
+
+<p>text text text text &hellip;</p>
+
+<h5 id="example-javascript-1">Example (JavaScript):</h5>
+
+<pre><code class="language-js">-
+</code></pre>
+
+<h5 id="example-haskell-1">Example (Haskell):</h5>
+
+<pre><code class="language-js">-
+</code></pre>
+
+<hr />
+
+<h3 id="io">IO</h3>
+
+<p>text text text text &hellip;</p>
+
+<h5 id="example-javascript-2">Example (JavaScript):</h5>
+
+<pre><code class="language-js">-
+</code></pre>
+
+<h5 id="example-haskell-2">Example (Haskell):</h5>
+
+<pre><code class="language-js">-
+</code></pre>
 
 <hr />
 
@@ -538,6 +643,8 @@ A Monad is a type that is both a Chain and an Applicative.</p>
 
 <ul>
 <li><a href="http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/">http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/</a></li>
+<li><a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html</a></li>
+<li><a href="https://habr.com/post/183150/">https://habr.com/post/183150/</a></li>
 </ul>
 
 
@@ -871,20 +978,20 @@ A Monad is a type that is both a Chain and an Applicative.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/fp/js/clipboard.min.js?1529790360"></script>
-    <script src="/fp/js/perfect-scrollbar.min.js?1529790360"></script>
-    <script src="/fp/js/perfect-scrollbar.jquery.min.js?1529790360"></script>
-    <script src="/fp/js/jquery.sticky.js?1529790360"></script>
-    <script src="/fp/js/featherlight.min.js?1529790360"></script>
-    <script src="/fp/js/html5shiv-printshiv.min.js?1529790360"></script>
-    <script src="/fp/js/highlight.pack.js?1529790360"></script>
+    <script src="/fp/js/clipboard.min.js?1529853457"></script>
+    <script src="/fp/js/perfect-scrollbar.min.js?1529853457"></script>
+    <script src="/fp/js/perfect-scrollbar.jquery.min.js?1529853457"></script>
+    <script src="/fp/js/jquery.sticky.js?1529853457"></script>
+    <script src="/fp/js/featherlight.min.js?1529853457"></script>
+    <script src="/fp/js/html5shiv-printshiv.min.js?1529853457"></script>
+    <script src="/fp/js/highlight.pack.js?1529853457"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/fp/js/modernizr.custom.71422.js?1529790360"></script>
-    <script src="/fp/js/learn.js?1529790360"></script>
-    <script src="/fp/js/hugo-learn.js?1529790360"></script>
+    <script src="/fp/js/modernizr.custom.71422.js?1529853457"></script>
+    <script src="/fp/js/learn.js?1529853457"></script>
+    <script src="/fp/js/hugo-learn.js?1529853457"></script>
 
-    <link href="/fp/mermaid/mermaid.css?1529790360" type="text/css" rel="stylesheet" />
-    <script src="/fp/mermaid/mermaid.js?1529790360"></script>
+    <link href="/fp/mermaid/mermaid.css?1529853457" type="text/css" rel="stylesheet" />
+    <script src="/fp/mermaid/mermaid.js?1529853457"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

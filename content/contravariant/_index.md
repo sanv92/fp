@@ -7,7 +7,7 @@ pre = "<b>8. </b>"
 +++
 
 # Contravariant
--
+---
 
 ## Graphic
 {{<mermaid align="center">}}

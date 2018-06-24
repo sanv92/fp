@@ -46,14 +46,14 @@
 	"title": "Traversable",
 	"tags": [],
 	"description": "Traversable",
-	"content": " Traversable -\nGraphic graph LR; A[Foldable] -- C{Decision} B[Functor] -- C[Traversable]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/05/08/fantas-eel-and-specification-12/  "
+	"content": " Traversable Graphic graph LR; A[Foldable] -- C{Decision} B[Functor] -- C[Traversable]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/05/08/fantas-eel-and-specification-12/  "
 },
 {
 	"uri": "/fp/contravariant/",
 	"title": "Contravariant",
 	"tags": [],
 	"description": "Contravariant",
-	"content": " Contravariant -\nGraphic graph LR; A[Functor] -- C[Contravariant]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/04/03/fantas-eel-and-specification-7/  "
+	"content": " Contravariant Graphic graph LR; A[Functor] -- C[Contravariant]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/04/03/fantas-eel-and-specification-7/  "
 },
 {
 	"uri": "/fp/apply/",
@@ -74,7 +74,7 @@
 	"title": "Alt, Plus, and Alternative",
 	"tags": [],
 	"description": "Alt, Plus, and Alternative",
-	"content": " Alt, Plus, and Alternative -\nGraphic graph LR; A[Alt] -- B[Plus] B -- D[Alternative] C[Applicative] -- D[Alternative]  Example: -  Read More:  http://www.tomharding.me/2017/04/24/fantas-eel-and-specification-10/  "
+	"content": " Alt, Plus, and Alternative Graphic graph LR; A[Alt] -- B[Plus] B -- D[Alternative] C[Applicative] -- D[Alternative]  Example: -  Read More:  http://www.tomharding.me/2017/04/24/fantas-eel-and-specification-10/  "
 },
 {
 	"uri": "/fp/chain/",
@@ -95,21 +95,21 @@
 	"title": "Monad",
 	"tags": [],
 	"description": "Monad",
-	"content": " Monad Graphic graph LR; A[Functor] -- B[Apply] B -- D[Alternative] D -- C[Monad] Z[Chain] -- C[Monad] B -- Z[Chain]  A Monad is a type that is both a Chain and an Applicative.\nMonads: Maybe, Either, IO\nRead More:  http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/  "
+	"content": " Monad (Maybe, Either, IO) \u0026ldquo;Maybe\u0026rdquo; is a Functor, an Applicative, and a Monad, \u0026ldquo;Monads\u0026rdquo; apply a function that returns a wrapped value.\nGraphic graph LR; A[Functor] -- B[Apply] B -- D[Applicative] D -- C[Monad] Z[Chain] -- C[Monad] B -- Z[Chain]  Maybe Suppose \u0026ldquo;half\u0026rdquo; is a function that only works on even numbers:\nExample (JavaScript): const { Option, Some, None, Result } = require('@es2/result-option') const half = (num) =\u0026gt; (num % 2 === 0) ? Some.of(num / 2) : None() const test1 = Some.of(100).chain(half).unwrapOr(0) console.log('test1: ', test1) const test1_1 = Some.of(2).chain(half).unwrapOr(0) console.log('test1_1: ', test1_1) const test2 = Some.of(3).chain(half).unwrapOr(0) console.log('test2: ', test2) const test3 = Some.of(4).chain(half).unwrapOr(0) console.log('test3: ', test3) const test4 = Some.of(None).chain(half).unwrapOr(0) console.log('test4: ', test4) const test5 = Some.of(20).chain(half).chain(half).chain(half).unwrapOr(0) console.log('test5: ', test5) const test6 = Some.of(20).chain(half).chain(half).unwrapOr(0) console.log('test6: ', test6)  Example (Haskell): class Monad m where (\u0026gt;\u0026gt;=) :: m a -\u0026gt; (a -\u0026gt; m b) -\u0026gt; m b instance Monad Maybe where Nothing \u0026gt;\u0026gt;= func = Nothing Just val \u0026gt;\u0026gt;= func = func val  half x = if even x then Just (x `div` 2) else Nothing \u0026gt; Just 2 \u0026gt;\u0026gt;= half Just 1 \u0026gt; Just 3 \u0026gt;\u0026gt;= half Nothing \u0026gt; Just 4 \u0026gt;\u0026gt;= half Just 2 \u0026gt; Nothing \u0026gt;\u0026gt;= half Nothing \u0026gt; Just 20 \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half Nothing \u0026gt; Just 20 \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half Just 5  Either text text text text \u0026hellip;\nExample (JavaScript): -  Example (Haskell): -  IO text text text text \u0026hellip;\nExample (JavaScript): -  Example (Haskell): -  Read More:  http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/ http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html https://habr.com/post/183150/  "
 },
 {
 	"uri": "/fp/extend/",
 	"title": "Extend",
 	"tags": [],
 	"description": "Extend",
-	"content": " Extend -\nGraphic graph LR; A[Functor] -- C[Extend]  Example: -  Read More:  http://www.tomharding.me/2017/06/12/fantas-eel-and-specification-16/  "
+	"content": " Extend Graphic graph LR; A[Functor] -- C[Extend]  Example: -  Read More:  http://www.tomharding.me/2017/06/12/fantas-eel-and-specification-16/  "
 },
 {
 	"uri": "/fp/comonad/",
 	"title": "Comonad",
 	"tags": [],
 	"description": "Comonad",
-	"content": " Extend -\nGraphic graph LR; A[Functor] -- B[Extend] B -- D[Comonad]  Example: -  Read More:  http://www.tomharding.me/2017/06/19/fantas-eel-and-specification-17/  "
+	"content": " Extend Graphic graph LR; A[Functor] -- B[Extend] B -- D[Comonad]  Example: -  Read More:  http://www.tomharding.me/2017/06/19/fantas-eel-and-specification-17/  "
 },
 {
 	"uri": "/fp/bifunctor_and_profunctor/",

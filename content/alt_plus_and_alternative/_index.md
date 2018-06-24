@@ -7,7 +7,7 @@ pre = "<b>11. </b>"
 +++
 
 # Alt, Plus, and Alternative
--
+---
 
 ## Graphic
 {{<mermaid align="center">}}

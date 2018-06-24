@@ -7,6 +7,7 @@ pre = "<b>2. </b>"
 +++
 
 # Setoid
+---
 A value which has a Setoid must provide an equals method. The equals method takes one argument:
 
 ## Graphic

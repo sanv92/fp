@@ -7,6 +7,7 @@ pre = "<b>3. </b>"
 +++
 
 # Ord
+---
 - Ord type contains types, the values of which can be ordered.
 
 - Ord contain functions **(>) - gt, (<) - lt, (>=) - gte, (<=) - lte**,

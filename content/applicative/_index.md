@@ -7,6 +7,7 @@ pre = "<b>10. </b>"
 +++
 
 # Applicative
+---
 **Applicative** types are **Apply** types with one extra function, which we define in Fantasy Land as "**of**":
 With **"of"**, we can take a value, and lift it into the given Applicative. That’s it! In the wild, most Apply types you practically use will also be Applicative.
 

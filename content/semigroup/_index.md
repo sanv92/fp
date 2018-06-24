@@ -7,7 +7,7 @@ pre = "<b>4. </b>"
 +++
 
 # Semigroup
-
+---
 ## Graphic
 {{<mermaid align="center">}}
 graph LR;

@@ -7,6 +7,7 @@ pre = "<b>6. </b>"
 +++
 
 # Foldable
+---
 A value which has a Foldable must provide a reduce method. The reduce method takes two arguments:
 
 `xs.reduce(f, m)`
