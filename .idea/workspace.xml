@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/content/monad/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monad/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +48,7 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/monad/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
+            <state relative-caret-position="521">
               <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
             </state>
           </provider>
@@ -304,11 +303,11 @@
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5028612" side_tool="true" weight="0.5979827" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5035765" side_tool="true" weight="0.5691643" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49713877" weight="0.5691643" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49642345" weight="0.5691643" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -602,7 +601,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content/monad/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
+        <state relative-caret-position="521">
           <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
         </state>
       </provider>
