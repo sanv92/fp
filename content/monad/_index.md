@@ -62,39 +62,64 @@ console.log('test6: ', test6) // 5
 
 
 ##### Example (Haskell):
-```js
+{{< highlight hs >}}
 class Monad m where
     (>>=) :: m a -> (a -> m b) -> m b
 
 instance Monad Maybe where
     Nothing >>= func = Nothing
     Just val >>= func  = func val
-```
+{{< /highlight >}}
 
-```js
+{{< highlight hs >}}
 half x = if even x
     then Just (x `div` 2)
     else Nothing
 
 > Just 2 >>= half
-Just 1
+-- Just 1
 
 > Just 3 >>= half
-Nothing
+-- Nothing
 
 > Just 4 >>= half
-Just 2
+-- Just 2
 
 > Nothing >>= half
-Nothing
+-- Nothing
 
 > Just 20 >>= half >>= half >>= half
-Nothing
+-- Nothing
 
 > Just 20 >>= half >>= half
-Just 5
+-- Just 5
+{{< /highlight >}}
 
-```
+{{< highlight hs >}}
+-- If we have a Just value, we can extract the underlying value it contains through pattern matching.
+half x = if even x
+    then Just (x `div` 2)
+    else Nothing
+
+zeroAsDefault :: Maybe Int -> Int
+zeroAsDefault mx = case mx of
+    Nothing -> 0
+    Just x -> x
+
+calc1 = Just 2 >>= half
+calc2 = Just 3 >>= half
+calc3 = Just 4 >>= half
+calc4 = Just 5 >>= half
+calc5 = Just 6 >>= half
+
+main = do
+    (\x -> putStrLn ("just 2: " ++ show x )) ( zeroAsDefault calc1 ) -- 1
+    (\x -> putStrLn ("just 3: " ++ show x )) ( zeroAsDefault calc2 ) -- 0
+    (\x -> putStrLn ("just 4: " ++ show x )) ( zeroAsDefault calc3 ) -- 2
+    (\x -> putStrLn ("just 5: " ++ show x )) ( zeroAsDefault calc4 ) -- 0
+    (\x -> putStrLn ("just 6: " ++ show x )) ( zeroAsDefault calc5 ) -- 3
+{{< /highlight >}}
+
 ---
 
 

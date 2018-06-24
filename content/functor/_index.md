@@ -41,15 +41,15 @@ Container.of(2).map(two => two + 2);
 Functor is "typeclass" (A lot of people coming from OOP get confused by typeclasses because they think they are like classes in object oriented languages).
 
 A Functor is any data type that defines how **"fmap"** applies to it. Here's how **"fmap"** works:
-```js
+{{< highlight hs >}}
 class Functor f where
     fmap :: (a -> b) -> f a -> f b
-```
+{{< /highlight >}}
 
-```js
+{{< highlight hs >}}
 > fmap (+3) (Just 2)
 Just 5
-```
+{{< /highlight >}}
 
 ![fmap](fmap_just.png)
 

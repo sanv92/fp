@@ -39,20 +39,20 @@ graph LR;
 
 
 ## Example (Haskell):
-```js
+{{< highlight hs >}}
 > Just (+3) <*> Just 2
-Just 5
-```
+-- Just 5
+{{< /highlight >}}
 
-```js
+{{< highlight hs >}}
 > [(*2), (+3)] <*> [1, 2, 3]
-[2, 4, 6, 4, 5, 6]
-```
+-- [2, 4, 6, 4, 5, 6]
+{{< /highlight >}}
 
-```js
+{{< highlight hs >}}
 > (*) <$> Just 5 <*> Just 3
-Just 15
-```
+-- Just 15
+{{< /highlight >}}
 
 ---
 #### Read More:
