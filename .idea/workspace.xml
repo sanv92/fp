@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/content/monad/maybe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/alt_plus_and_alternative/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/alt_plus_and_alternative/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/applicative/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/applicative/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/apply/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/apply/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/bifunctor_and_profunctor/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/bifunctor_and_profunctor/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/chain/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/chain/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/chainrec/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/chainrec/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/comonad/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/comonad/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/contravariant/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/contravariant/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/extend/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/extend/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/foldable/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/foldable/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/functor/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/functor/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/monad/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monad/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/monoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/monoid/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/ord/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/ord/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/semigroup/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/semigroup/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/setoid/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/setoid/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/traversable/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/traversable/_index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/content/applicative/_index.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="449">
-              <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+              <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -67,8 +49,8 @@
       <file leaf-file-name="_index.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/monad/_index.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+            <state relative-caret-position="524">
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -104,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/content/traversable/_index.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -327,7 +309,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49713877" weight="0.5691643" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28183118" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -600,7 +582,7 @@
     <entry file="file://$PROJECT_DIR$/content/traversable/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -614,14 +596,14 @@
     <entry file="file://$PROJECT_DIR$/content/applicative/_index.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
-          <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/monad/_index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        <state relative-caret-position="524">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
         </state>
       </provider>
     </entry>

@@ -39,25 +39,25 @@ const half = (num) => (num % 2 === 0)
   : None()
 
 const test1 = Some.of(100).chain(half).unwrapOr(0)
-console.log('test1: ', test1)
+console.log('test1: ', test1) // 50
 
 const test1_1 = Some.of(2).chain(half).unwrapOr(0)
-console.log('test1_1: ', test1_1)
+console.log('test1_1: ', test1_1) // 1
 
 const test2 = Some.of(3).chain(half).unwrapOr(0)
-console.log('test2: ', test2)
+console.log('test2: ', test2) // 0
 
 const test3 = Some.of(4).chain(half).unwrapOr(0)
-console.log('test3: ', test3)
+console.log('test3: ', test3) // 2
 
 const test4 = Some.of(None).chain(half).unwrapOr(0)
-console.log('test4: ', test4)
+console.log('test4: ', test4) // 0
 
 const test5 = Some.of(20).chain(half).chain(half).chain(half).unwrapOr(0)
-console.log('test5: ', test5)
+console.log('test5: ', test5) // 0
 
 const test6 = Some.of(20).chain(half).chain(half).unwrapOr(0)
-console.log('test6: ', test6)
+console.log('test6: ', test6) // 5
 ```
 
 
