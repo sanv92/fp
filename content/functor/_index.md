@@ -48,7 +48,7 @@ class Functor f where
 
 {{< highlight hs >}}
 > fmap (+3) (Just 2)
-Just 5
+-- Just 5
 {{< /highlight >}}
 
 ![fmap](fmap_just.png)
