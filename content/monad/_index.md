@@ -8,9 +8,12 @@ pre = "<b>14. </b>"
 
 # Monad (Maybe, Either, IO)
 ---
-**"Maybe"** is a Functor, an Applicative, and a Monad,
-"Monads" apply a function that returns a wrapped value.
+**"Monads"** apply a function that returns a wrapped value.
+![recap](recap.png)
 
+- **functors:** you apply a function to a wrapped value using **fmap** or **<$>**
+- **applicatives:** you apply a wrapped function to a wrapped value using **<*>**
+- **monads:** you apply a function that returns a wrapped value, to a wrapped value using **>>=**
 
 ## Graphic
 {{<mermaid align="center">}}
@@ -25,6 +28,7 @@ graph LR;
 
 
 ### Maybe
+**"Maybe"** is a Functor, an Applicative, and a Monad.
 ![applicative](maybe.png)
 
 Suppose **"half"** is a function that only works on even numbers:
@@ -124,8 +128,8 @@ main = do
 
 
 ### Either
-text text text text ...
-
+The Either monad is sometimes used to represent a value which is either correct or an error,
+the **Left** constructor is used to hold an error value and the **Right** constructor is used to hold a correct value.
 
 ##### Example (JavaScript):
 ```js
@@ -133,15 +137,37 @@ text text text text ...
 ```
 
 ##### Example (Haskell):
-```js
--
-```
+{{< highlight hs >}}
+import Text.Read
+
+
+validateAge :: String -> Either String Int
+validateAge input =
+    case readMaybe input of
+    Nothing  -> Left "Invalid input. Not a number"
+    Just age -> case age of
+                _ | age < 0    -> Left "Error: Invalid age. It must be greater than zero."
+                _ | age <= 18  -> Left "Error: Below legal age to sign the contract."
+                _ | age > 200  -> Left "Error: Invalid age. Impossible age."
+                _              -> Right age
+
+main :: IO ()
+main = do
+    (\x -> putStrLn ("-100: " ++ show x )) ( validateAge "-100" )
+    (\x -> putStrLn ("16: " ++ show x )) ( validateAge "16" )
+{{< /highlight >}}
+
 
 ---
 
 ### IO
-text text text text ...
+The IO monad wraps computations in the following context: “This computation can read information from or write information to the terminal, file system, operating system, and/or network”.
 
+If you want to get user input, print a message to the user, read information from a file, or make a network call, you’ll need to do so within the IO Monad.
+
+Function called main, has type IO (), every program starts in the IO monad.
+
+![recap](monad_io.png)
 
 ##### Example (JavaScript):
 ```js
@@ -149,12 +175,46 @@ text text text text ...
 ```
 
 ##### Example (Haskell):
-```js
--
-```
+{{< highlight hs >}}
+toList :: String -> [Integer]
+toList input = read ("[" ++ input ++ "]")
+
+main :: IO ()
+main = do
+    putStrLn "What is your name?" >> getLine
+    >>= \name -> putStrLn ("Hello, " ++ name ++ "!")
+{{< /highlight >}}
+
+{{< highlight hs >}}
+type Login = String
+type Password = String
+
+users :: [(Login, Password)]
+users =
+    [ ("admin", "1234")
+    , ("begemot", "0000")
+    ]
+
+askPassword :: IO Bool
+askPassword = do
+    putStr "Enter Login: "
+    login <- getLine
+    putStr "Enter password: "
+    password <- getLine
+    return $ maybe False (\p -> p == password) $ lookup login users
+
+main :: IO ()
+main = do
+    passwordIsCorrect <- askPassword
+    putStrLn $ if passwordIsCorrect
+        then "Welcome!"
+        else "Incorrect password"
+{{< /highlight >}}
 
 ---
 #### Read More:
 - http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/
 - http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html
 - https://habr.com/post/183150/
+- https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/maybe/2.hs
+- https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/either/5.hs

@@ -11,17 +11,17 @@
 <link rel="icon" href="/fp/images/favicon.png" type="image/x-icon" />
 
     
-    <link href="/fp/css/nucleus.css?1529859196" rel="stylesheet">
-    <link href="/fp/css/font-awesome.min.css?1529859196" rel="stylesheet">
-    <link href="/fp/css/hybrid.css?1529859196" rel="stylesheet">
-    <link href="/fp/css/featherlight.min.css?1529859196" rel="stylesheet">
-    <link href="/fp/css/perfect-scrollbar.min.css?1529859196" rel="stylesheet">
-    <link href="/fp/css/auto-complete.css?1529859196" rel="stylesheet">
-    <link href="/fp/css/theme.css?1529859196" rel="stylesheet">
-    <link href="/fp/css/hugo-theme.css?1529859196" rel="stylesheet">
+    <link href="/fp/css/nucleus.css?1530133801" rel="stylesheet">
+    <link href="/fp/css/font-awesome.min.css?1530133801" rel="stylesheet">
+    <link href="/fp/css/hybrid.css?1530133801" rel="stylesheet">
+    <link href="/fp/css/featherlight.min.css?1530133801" rel="stylesheet">
+    <link href="/fp/css/perfect-scrollbar.min.css?1530133801" rel="stylesheet">
+    <link href="/fp/css/auto-complete.css?1530133801" rel="stylesheet">
+    <link href="/fp/css/theme.css?1530133801" rel="stylesheet">
+    <link href="/fp/css/hugo-theme.css?1530133801" rel="stylesheet">
     
 
-    <script src="/fp/js/jquery-2.x.min.js?1529859196"></script>
+    <script src="/fp/js/jquery-2.x.min.js?1530133801"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -45,14 +45,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/fp/js/lunr.min.js?1529859196"></script>
-<script type="text/javascript" src="/fp/js/auto-complete.js?1529859196"></script>
+<script type="text/javascript" src="/fp/js/lunr.min.js?1530133801"></script>
+<script type="text/javascript" src="/fp/js/auto-complete.js?1530133801"></script>
 <script type="text/javascript">
     
         var baseurl = '\/fp';
     
 </script>
-<script type="text/javascript" src="/fp/js/search.js?1529859196"></script>
+<script type="text/javascript" src="/fp/js/search.js?1530133801"></script>
 
     
   </div>
@@ -518,8 +518,14 @@
 
 <hr />
 
-<p><strong>&ldquo;Maybe&rdquo;</strong> is a Functor, an Applicative, and a Monad,
-&ldquo;Monads&rdquo; apply a function that returns a wrapped value.</p>
+<p><strong>&ldquo;Monads&rdquo;</strong> apply a function that returns a wrapped value.
+<img src="recap.png" alt="recap" /></p>
+
+<ul>
+<li><strong>functors:</strong> you apply a function to a wrapped value using <strong>fmap</strong> or <strong>&lt;$&gt;</strong></li>
+<li><strong>applicatives:</strong> you apply a wrapped function to a wrapped value using <strong>&lt;*&gt;</strong></li>
+<li><strong>monads:</strong> you apply a function that returns a wrapped value, to a wrapped value using <strong>&gt;&gt;=</strong></li>
+</ul>
 
 <h2 id="graphic">Graphic</h2>
 
@@ -536,7 +542,8 @@ graph LR;
 
 <h3 id="maybe">Maybe</h3>
 
-<p><img src="maybe.png" alt="applicative" /></p>
+<p><strong>&ldquo;Maybe&rdquo;</strong> is a Functor, an Applicative, and a Monad.
+<img src="maybe.png" alt="applicative" /></p>
 
 <p>Suppose <strong>&ldquo;half&rdquo;</strong> is a function that only works on even numbers:</p>
 
@@ -629,7 +636,8 @@ console.log('test6: ', test6) // 5
 
 <h3 id="either">Either</h3>
 
-<p>text text text text &hellip;</p>
+<p>The Either monad is sometimes used to represent a value which is either correct or an error,
+the <strong>Left</strong> constructor is used to hold an error value and the <strong>Right</strong> constructor is used to hold a correct value.</p>
 
 <h5 id="example-javascript-1">Example (JavaScript):</h5>
 
@@ -638,14 +646,35 @@ console.log('test6: ', test6) // 5
 
 <h5 id="example-haskell-1">Example (Haskell):</h5>
 
-<pre><code class="language-js">-
-</code></pre>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hs" data-lang="hs"><span style="color:#66d9ef">import</span> Text.Read
+
+
+<span style="color:#a6e22e">validateAge</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Either</span> <span style="color:#66d9ef">String</span> <span style="color:#66d9ef">Int</span>
+<span style="color:#a6e22e">validateAge</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span>
+    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">readMaybe</span> <span style="color:#a6e22e">input</span> <span style="color:#66d9ef">of</span>
+    <span style="color:#66d9ef">Nothing</span>  <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Left</span> <span style="color:#e6db74">&#34;Invalid input. Not a number&#34;</span>
+    <span style="color:#66d9ef">Just</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">age</span> <span style="color:#66d9ef">of</span>
+                <span style="color:#66d9ef">_</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>    <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Left</span> <span style="color:#e6db74">&#34;Error: Invalid age. It must be greater than zero.&#34;</span>
+                <span style="color:#66d9ef">_</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">18</span>  <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Left</span> <span style="color:#e6db74">&#34;Error: Below legal age to sign the contract.&#34;</span>
+                <span style="color:#66d9ef">_</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">200</span>  <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Left</span> <span style="color:#e6db74">&#34;Error: Invalid age. Impossible age.&#34;</span>
+                <span style="color:#66d9ef">_</span>              <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">Right</span> <span style="color:#a6e22e">age</span>
+
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+    (<span style="color:#a6e22e">\x</span> <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">putStrLn</span> (<span style="color:#e6db74">&#34;-100: &#34;</span> <span style="color:#f92672">++</span> <span style="color:#a6e22e">show</span> <span style="color:#a6e22e">x</span> )) ( <span style="color:#a6e22e">validateAge</span> <span style="color:#e6db74">&#34;-100&#34;</span> )
+    (<span style="color:#a6e22e">\x</span> <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">putStrLn</span> (<span style="color:#e6db74">&#34;16: &#34;</span> <span style="color:#f92672">++</span> <span style="color:#a6e22e">show</span> <span style="color:#a6e22e">x</span> )) ( <span style="color:#a6e22e">validateAge</span> <span style="color:#e6db74">&#34;16&#34;</span> )</code></pre></div></p>
 
 <hr />
 
 <h3 id="io">IO</h3>
 
-<p>text text text text &hellip;</p>
+<p>The IO monad wraps computations in the following context: “This computation can read information from or write information to the terminal, file system, operating system, and/or network”.</p>
+
+<p>If you want to get user input, print a message to the user, read information from a file, or make a network call, you’ll need to do so within the IO Monad.</p>
+
+<p>Function called main, has type IO (), every program starts in the IO monad.</p>
+
+<p><img src="monad_io.png" alt="recap" /></p>
 
 <h5 id="example-javascript-2">Example (JavaScript):</h5>
 
@@ -654,8 +683,37 @@ console.log('test6: ', test6) // 5
 
 <h5 id="example-haskell-2">Example (Haskell):</h5>
 
-<pre><code class="language-js">-
-</code></pre>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hs" data-lang="hs"><span style="color:#a6e22e">toList</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">String</span> <span style="color:#f92672">-&gt;</span> [<span style="color:#66d9ef">Integer</span>]
+<span style="color:#a6e22e">toList</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">read</span> (<span style="color:#e6db74">&#34;[&#34;</span> <span style="color:#f92672">++</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;]&#34;</span>)
+
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+    <span style="color:#a6e22e">putStrLn</span> <span style="color:#e6db74">&#34;What is your name?&#34;</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">getLine</span>
+    <span style="color:#f92672">&gt;&gt;=</span> <span style="color:#a6e22e">\name</span> <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">putStrLn</span> (<span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">++</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">++</span> <span style="color:#e6db74">&#34;!&#34;</span>)</code></pre></div></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-hs" data-lang="hs"><span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Login</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">String</span>
+<span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Password</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">String</span>
+
+<span style="color:#a6e22e">users</span> <span style="color:#f92672">::</span> [(<span style="color:#66d9ef">Login</span>, <span style="color:#66d9ef">Password</span>)]
+<span style="color:#a6e22e">users</span> <span style="color:#f92672">=</span>
+    [ (<span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;1234&#34;</span>)
+    , (<span style="color:#e6db74">&#34;begemot&#34;</span>, <span style="color:#e6db74">&#34;0000&#34;</span>)
+    ]
+
+<span style="color:#a6e22e">askPassword</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> <span style="color:#66d9ef">Bool</span>
+<span style="color:#a6e22e">askPassword</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+    <span style="color:#a6e22e">putStr</span> <span style="color:#e6db74">&#34;Enter Login: &#34;</span>
+    <span style="color:#a6e22e">login</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">getLine</span>
+    <span style="color:#a6e22e">putStr</span> <span style="color:#e6db74">&#34;Enter password: &#34;</span>
+    <span style="color:#a6e22e">password</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">getLine</span>
+    <span style="color:#a6e22e">return</span> <span style="color:#f92672">$</span> <span style="color:#a6e22e">maybe</span> <span style="color:#66d9ef">False</span> (<span style="color:#a6e22e">\p</span> <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">p</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">password</span>) <span style="color:#f92672">$</span> <span style="color:#a6e22e">lookup</span> <span style="color:#a6e22e">login</span> <span style="color:#a6e22e">users</span>
+
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">::</span> <span style="color:#66d9ef">IO</span> ()
+<span style="color:#a6e22e">main</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">do</span>
+    <span style="color:#a6e22e">passwordIsCorrect</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">askPassword</span>
+    <span style="color:#a6e22e">putStrLn</span> <span style="color:#f92672">$</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">passwordIsCorrect</span>
+        <span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#34;Welcome!&#34;</span>
+        <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34;Incorrect password&#34;</span></code></pre></div>
 
 <hr />
 
@@ -665,6 +723,8 @@ console.log('test6: ', test6) // 5
 <li><a href="http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/">http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/</a></li>
 <li><a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html</a></li>
 <li><a href="https://habr.com/post/183150/">https://habr.com/post/183150/</a></li>
+<li><a href="https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/maybe/2.hs">https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/maybe/2.hs</a></li>
+<li><a href="https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/either/5.hs">https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/either/5.hs</a></li>
 </ul>
 
 
@@ -998,20 +1058,20 @@ console.log('test6: ', test6) // 5
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/fp/js/clipboard.min.js?1529859196"></script>
-    <script src="/fp/js/perfect-scrollbar.min.js?1529859196"></script>
-    <script src="/fp/js/perfect-scrollbar.jquery.min.js?1529859196"></script>
-    <script src="/fp/js/jquery.sticky.js?1529859196"></script>
-    <script src="/fp/js/featherlight.min.js?1529859196"></script>
-    <script src="/fp/js/html5shiv-printshiv.min.js?1529859196"></script>
-    <script src="/fp/js/highlight.pack.js?1529859196"></script>
+    <script src="/fp/js/clipboard.min.js?1530133801"></script>
+    <script src="/fp/js/perfect-scrollbar.min.js?1530133801"></script>
+    <script src="/fp/js/perfect-scrollbar.jquery.min.js?1530133801"></script>
+    <script src="/fp/js/jquery.sticky.js?1530133801"></script>
+    <script src="/fp/js/featherlight.min.js?1530133801"></script>
+    <script src="/fp/js/html5shiv-printshiv.min.js?1530133801"></script>
+    <script src="/fp/js/highlight.pack.js?1530133801"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/fp/js/modernizr.custom.71422.js?1529859196"></script>
-    <script src="/fp/js/learn.js?1529859196"></script>
-    <script src="/fp/js/hugo-learn.js?1529859196"></script>
+    <script src="/fp/js/modernizr.custom.71422.js?1530133801"></script>
+    <script src="/fp/js/learn.js?1530133801"></script>
+    <script src="/fp/js/hugo-learn.js?1530133801"></script>
 
-    <link href="/fp/mermaid/mermaid.css?1529859196" type="text/css" rel="stylesheet" />
-    <script src="/fp/mermaid/mermaid.js?1529859196"></script>
+    <link href="/fp/mermaid/mermaid.css?1530133801" type="text/css" rel="stylesheet" />
+    <script src="/fp/mermaid/mermaid.js?1530133801"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
