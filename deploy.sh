@@ -41,7 +41,7 @@ git commit -m "$msg"
 git remote add origin git@github.com:everyone-can-code/fp.git
 
 # Push source and build repos.
-git push origin master
+git push origin master --force
 
 # Come Back up to the Project Root
 cd ..

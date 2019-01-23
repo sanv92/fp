@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/logo.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-learn/layouts/partials/logo.html" afterDir="false" />
@@ -220,7 +216,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="788" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2931642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
