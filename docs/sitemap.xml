@@ -3,84 +3,84 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/fp/functor/</loc>
+    <loc>//localhost/fp/functor/</loc>
   </url>
   
   <url>
-    <loc>/fp/setoid/</loc>
+    <loc>//localhost/fp/setoid/</loc>
   </url>
   
   <url>
-    <loc>/fp/ord/</loc>
+    <loc>//localhost/fp/ord/</loc>
   </url>
   
   <url>
-    <loc>/fp/semigroup/</loc>
+    <loc>//localhost/fp/semigroup/</loc>
   </url>
   
   <url>
-    <loc>/fp/monoid/</loc>
+    <loc>//localhost/fp/monoid/</loc>
   </url>
   
   <url>
-    <loc>/fp/foldable/</loc>
+    <loc>//localhost/fp/foldable/</loc>
   </url>
   
   <url>
-    <loc>/fp/traversable/</loc>
+    <loc>//localhost/fp/traversable/</loc>
   </url>
   
   <url>
-    <loc>/fp/contravariant/</loc>
+    <loc>//localhost/fp/contravariant/</loc>
   </url>
   
   <url>
-    <loc>/fp/apply/</loc>
+    <loc>//localhost/fp/apply/</loc>
   </url>
   
   <url>
-    <loc>/fp/applicative/</loc>
+    <loc>//localhost/fp/applicative/</loc>
   </url>
   
   <url>
-    <loc>/fp/alt_plus_and_alternative/</loc>
+    <loc>//localhost/fp/alt_plus_and_alternative/</loc>
   </url>
   
   <url>
-    <loc>/fp/chain/</loc>
+    <loc>//localhost/fp/chain/</loc>
   </url>
   
   <url>
-    <loc>/fp/chainrec/</loc>
+    <loc>//localhost/fp/chainrec/</loc>
   </url>
   
   <url>
-    <loc>/fp/monad/</loc>
+    <loc>//localhost/fp/monad/</loc>
   </url>
   
   <url>
-    <loc>/fp/extend/</loc>
+    <loc>//localhost/fp/extend/</loc>
   </url>
   
   <url>
-    <loc>/fp/comonad/</loc>
+    <loc>//localhost/fp/comonad/</loc>
   </url>
   
   <url>
-    <loc>/fp/bifunctor_and_profunctor/</loc>
+    <loc>//localhost/fp/bifunctor_and_profunctor/</loc>
   </url>
   
   <url>
-    <loc>/fp/categories/</loc>
+    <loc>//localhost/fp/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/fp/</loc>
+    <loc>//localhost/fp/</loc>
   </url>
   
   <url>
-    <loc>/fp/tags/</loc>
+    <loc>//localhost/fp/tags/</loc>
     <priority>0</priority>
   </url>
   

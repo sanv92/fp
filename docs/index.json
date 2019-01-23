@@ -1,139 +1,139 @@
 [
 {
-	"uri": "/fp/functor/",
+	"uri": "//localhost/fp/functor/",
 	"title": "Functor",
 	"tags": [],
 	"description": "Functional JavaScript: Functors",
 	"content": " Functor So, What are Functors? (JavaScript)\n\u0026ldquo;Functors\u0026rdquo; are the containers or type that can be used with \u0026ldquo;map\u0026rdquo; function.\nGraphic graph LR; A[Functor]  Example: Container.prototype.map = (f) =\u0026gt; { return Container.of(f(this.$value)); }; Container.of(2).map(two =\u0026gt; two + 2);  [1, 2, 3].map((num) =\u0026gt; num + 2);  Just what is a Functor, really? (Haskell)\nFunctor is \u0026ldquo;typeclass\u0026rdquo; (A lot of people coming from OOP get confused by typeclasses because they think they are like classes in object oriented languages).\nA Functor is any data type that defines how \u0026ldquo;fmap\u0026rdquo; applies to it. Here\u0026rsquo;s how \u0026ldquo;fmap\u0026rdquo; works: class Functor f where fmap :: (a -\u0026gt; b) -\u0026gt; f a -\u0026gt; f b\n\u0026gt; fmap (+3) (Just 2) -- Just 5 Read More:  https://hackernoon.com/functors-in-javascript-20a647b8f39f https://en.wikibooks.org/wiki/Haskell/The_Functor_class http://learnyouahaskell.com/types-and-typeclasses  "
 },
 {
-	"uri": "/fp/setoid/",
+	"uri": "//localhost/fp/setoid/",
 	"title": "Setoid",
 	"tags": [],
 	"description": "Setoid",
 	"content": " Setoid A value which has a Setoid must provide an equals method. The equals method takes one argument:\nGraphic graph LR; A[Setoid]  Example: Ramda: import { equals } from 'ramda' equals([1, 2], [1, 2]) // true equals([1, 2], [0]) // false  Ramda (currying): import { equals } from 'ramda' equals([1, 2])([1, 2]) // true equals([1, 2])([0]) // false  Read More:  https://medium.com/devschacht/tom-harding-fantas-eel-and-specification-3-setoid-78c2a0e8cc07 http://www.tomharding.me/2017/03/09/fantas-eel-and-specification-3/  "
 },
 {
-	"uri": "/fp/ord/",
+	"uri": "//localhost/fp/ord/",
 	"title": "Ord",
 	"tags": [],
 	"description": "Ord",
 	"content": " Ord  Ord type contains types, the values of which can be ordered.\n Ord contain functions (\u0026gt;) - gt, (\u0026lt;) - lt, (\u0026gt;=) - gte, (\u0026lt;=) - lte, given any two values of a given Ord type, you can determine whether one be greater than the other.\n Ord is almost identical to Setoid’s equals, the only difference is that, this time, we return a boolean to indicate whether this \u0026lt;= that, rather than this == that. Using only gt, lt, gte, lte and equals (because every Ord is a Setoid), we can derive all the things we might want:\n  Graphic graph LR; A[Setoid] -- B(Ord)  Example import { equals } from 'ramda' // Greater than. The OPPOSITE of lte. // gt :: Ord a =\u0026gt; a -\u0026gt; a -\u0026gt; Boolean const gt = (x, y) =\u0026gt; { return !lte(x, y) } // Greater than or equal. // gte :: Ord a =\u0026gt; a -\u0026gt; a -\u0026gt; Boolean const gte = (x, y) =\u0026gt; { return gt(x, y) || equals(x)(y) } // Less than. The OPPOSITE of gt! // lt :: Ord a =\u0026gt; a -\u0026gt; a -\u0026gt; Boolean const lt = (x, y) =\u0026gt; { return !gte(x, y) } // Less than or equal. The OPPOSITE of gte! // lte :: Ord a =\u0026gt; a -\u0026gt; a -\u0026gt; Boolean const lte = (x, y) =\u0026gt; { return x \u0026lt;= y }  Read More:  http://www.tomharding.me/2017/04/09/fantas-eel-and-specification-3.5/  "
 },
 {
-	"uri": "/fp/semigroup/",
+	"uri": "//localhost/fp/semigroup/",
 	"title": "Semigroup",
 	"tags": [],
 	"description": "Semigroup",
 	"content": " Semigroup Graphic graph LR; A[Semigroup]  Semigroup must have a concat method. The concat method takes one argument: s.concat(b)\nA Semigroup’s concat method must take another value of the same type, and return a third value of the same type.\nExamples JavaScript’s \u0026ldquo;String\u0026rdquo; type is already semigroup: // 'hello, world!' 'hello'.concat(', world!') // This operation is associative, too! 'hello'.concat(', ').concat('world!') 'hello'.concat(', '.concat('world!'))  JavaScript’s \u0026ldquo;Arrays\u0026rdquo; are already valid semigroups, too: [1, 2].concat([3, 4]) // [1, 2, 3, 4] // Aaand it's associative! [1].concat([2, 3]).concat([4]) [1].concat([2, 3].concat([4]))  Concat with custom type: const Sum = (value) =\u0026gt; ({ value, concat: (y) =\u0026gt; Sum(value + y.value), empty: () =\u0026gt; Sum.empty() }) Sum.empty = () =\u0026gt; Sum(0) Sum.prototype.concat = function (that) { return Sum(this.val + that.val) } Sum(2).concat(Sum(3)).value // 5  Read More:  http://www.tomharding.me/2017/03/13/fantas-eel-and-specification-4/  "
 },
 {
-	"uri": "/fp/monoid/",
+	"uri": "//localhost/fp/monoid/",
 	"title": "Monoid",
 	"tags": [],
 	"description": "Monoid",
 	"content": " Monoid Graphic graph LR; A[Semigroup] -- B(Monoid)  Binary operation \u0026ldquo;This is not binary data \u0026ldquo;101010\u0026rdquo;, as you thought at first time.\nThis means, that both inner data will have the same type, and when we return result, it will have also the same type and this types will be equal.\nIdentity Empty value\n// ''.concat('hello') // === 'hello'.concat('') // === 'hello' String.empty = () =\u0026gt; '' // [].concat([1, 2, 3]) // === [1, 2, 3].concat([]) // === [1, 2, 3] Array.empty = () =\u0026gt; []  Associative operation It just means that the order in which you perform the addition or multiplication of a series of numbers doesn’t matter:\n(0 + 1) + 2 = 0 + (1 + 2) (1 * 2) * 3 = 1 * (2 * 3)  With a Semigroup type, you can combine one or more values to make another, right?\nAll a monoid does is let us upgrade that to zero or more.\nAs a surprisingly good intuition, monoids encapsulate the logic of Array.reduce. That’s what they do. That’s what they’re for. That’s it right there. If you know how to reduce lists, then congratulations, you’re now a monoid warrior:\nExample: Reduce list See the Pen Monoid by SanderV1992 (@sanderv1992) on CodePen.\n\nParallel // In practice, you'd want a generator here... // Non-tail-recursion is expensive in JS! const chunk = xs =\u0026gt; xs.length \u0026lt; 5000 ? [xs] : [ xs.slice(0, 5000) , ... chunk(xs.slice(5000)) ] // ... You get the idea. const parallelMap = f =\u0026gt; xs =\u0026gt; xs.map(x =\u0026gt; RunThisThingOnANewThread(f, x)) // Chunk, fold in parallel, fold the result. // In practice, this would probably be async. const foldP = M =\u0026gt; xs =\u0026gt; parallelMap(fold(M))(chunk(xs)) .reduce( (xs, ys) =\u0026gt; xs.concat(ys), M.empty()) // With all that in place... // Numbers from 0 to 999,999... const bigList = [... Array(1e6)].map((_, i) =\u0026gt; i) // ... Ta-da! 499999500000 // Parallel-ready map/reduce; isn't it *neat*? foldP(Sum)(bigList).val  So, monoids let us write easily-optimised and expressive reduce operations.\nRead More:  http://www.tomharding.me/2017/03/21/fantas-eel-and-specification-5/ https://marmelab.com/blog/2018/04/18/functional-programming-2-monoid.html https://wiki.haskell.org/Monoid  "
 },
 {
-	"uri": "/fp/foldable/",
+	"uri": "//localhost/fp/foldable/",
 	"title": "Foldable",
 	"tags": [],
 	"description": "Foldable",
 	"content": " Foldable A value which has a Foldable must provide a reduce method. The reduce method takes two arguments:\nxs.reduce(f, m)\nGraphic graph LR; A[Foldable]  Example: Ramda: const toArray xs =\u0026gt; xs.reduce( (acc, x) =\u0026gt; acc.concat([x]), [] ) u.reduce(f) === toArray(u).reduce(f)  Read More:  http://www.tomharding.me/2017/05/01/fantas-eel-and-specification-11/ https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D1%91%D1%80%D1%82%D0%BA%D0%B0_%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0  "
 },
 {
-	"uri": "/fp/traversable/",
+	"uri": "//localhost/fp/traversable/",
 	"title": "Traversable",
 	"tags": [],
 	"description": "Traversable",
 	"content": " Traversable Graphic graph LR; A[Foldable] -- C{Decision} B[Functor] -- C[Traversable]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/05/08/fantas-eel-and-specification-12/  "
 },
 {
-	"uri": "/fp/contravariant/",
+	"uri": "//localhost/fp/contravariant/",
 	"title": "Contravariant",
 	"tags": [],
 	"description": "Contravariant",
 	"content": " Contravariant Graphic graph LR; A[Functor] -- C[Contravariant]  Example: Ramda: -  Read More:  http://www.tomharding.me/2017/04/03/fantas-eel-and-specification-7/  "
 },
 {
-	"uri": "/fp/apply/",
+	"uri": "//localhost/fp/apply/",
 	"title": "Apply",
 	"tags": [],
 	"description": "Apply",
 	"content": " Apply All Apply types are Functor types, so we know they’re definitely “containers” for other types:\nGraphic graph LR; A[Functor] -- B[Apply]  Read More:  http://www.tomharding.me/2017/04/10/fantas-eel-and-specification-8/  "
 },
 {
-	"uri": "/fp/applicative/",
+	"uri": "//localhost/fp/applicative/",
 	"title": "Applicative",
 	"tags": [],
 	"description": "Applicative",
 	"content": " Applicative Applicative types are Apply types with one extra function, which we define in Fantasy Land as \u0026ldquo;of\u0026ldquo;: With \u0026ldquo;of\u0026rdquo;, we can take a value, and lift it into the given Applicative. That’s it! In the wild, most Apply types you practically use will also be Applicative.\nWith an applicative, our values are wrapped in a context, just like Functors: But our functions are wrapped in a context too! Applicative functor must know, how to apply a function wrapped in a context to a value wrapped in a context: Graphic graph LR; A[Functor] -- B[Apply] B -- C[Applicative]  Example (JavaScript): See the Pen BVVrvP by SanderV1992 (@sanderv1992) on CodePen.\n\nSee the Pen pKKLjO by SanderV1992 (@sanderv1992) on CodePen.\n\nExample (Haskell): \u0026gt; Just (+3) \u0026lt;*\u0026gt; Just 2 -- Just 5 \u0026gt; [(*2), (+3)] \u0026lt;*\u0026gt; [1, 2, 3] -- [2, 4, 6, 4, 5, 6] \u0026gt; (*) \u0026lt;$\u0026gt; Just 5 \u0026lt;*\u0026gt; Just 3 -- Just 15 Read More:  http://www.tomharding.me/2017/04/17/fantas-eel-and-specification-9/ http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html https://habr.com/post/183150/  "
 },
 {
-	"uri": "/fp/alt_plus_and_alternative/",
+	"uri": "//localhost/fp/alt_plus_and_alternative/",
 	"title": "Alt, Plus, and Alternative",
 	"tags": [],
 	"description": "Alt, Plus, and Alternative",
 	"content": " Alt, Plus, and Alternative Graphic graph LR; A[Alt] -- B[Plus] B -- D[Alternative] C[Applicative] -- D[Alternative]  Example: -  Read More:  http://www.tomharding.me/2017/04/24/fantas-eel-and-specification-10/  "
 },
 {
-	"uri": "/fp/chain/",
+	"uri": "//localhost/fp/chain/",
 	"title": "Chain",
 	"tags": [],
 	"description": "Chain",
 	"content": " Chain Graphic graph LR; A[Functor] -- B[Apply] B -- D[Chain]  Each time we map with a Maybe-returning function, we call map to flatten the two Maybe layers into one. map, join, map, join, and so on.\nBack in the Traversable post, we saw that the map/sequence pattern was common enough that we gave it an alias: traverse.\nWouldn’t you know it, the same applies here: the map/join pattern is so common, we call it chain.\nExample: Before //+ join :: Maybe (Maybe a) ~\u0026gt; Maybe a Maybe.prototype.join = function () { return this.cata({ Just: x =\u0026gt; x, Nothing: () =\u0026gt; Nothing }) } prop('a')(data) // Just({ b: { c: 2 } }) .map(prop('b')).join() // Just({ c: 2 }) .map(prop('c')).join() // Just(2) prop('a')(data) // Just({ b: { c: 2 } }) .map(prop('badger')).join() // Nothing .map(prop('c')).join() // Nothing  After //+ chain :: Maybe a ~\u0026gt; (a -\u0026gt; Maybe b) //+ -\u0026gt; Maybe b Maybe.prototype.chain = function (f) { return this.cata({ Just: f, Nothing: () =\u0026gt; this // Do nothing }) } // Just like `sequence` is `traverse` with // `id`, `join` is `chain` with `id`! //+ join :: Chain m =\u0026gt; m (m a) ~\u0026gt; m a const join = xs =\u0026gt; xs.chain(x =\u0026gt; x) // Our example one more time... prop('a')(data) // Just({ b: { c: 2 } }) .chain(prop('b')) // Just({ c: 2 }) .chain(prop('c')) // Just(2)  Read More:  http://www.tomharding.me/2017/05/15/fantas-eel-and-specification-13/  "
 },
 {
-	"uri": "/fp/chainrec/",
+	"uri": "//localhost/fp/chainrec/",
 	"title": "ChainRec",
 	"tags": [],
 	"description": "ChainRec",
 	"content": " ChainRec Graphic graph LR; A[Functor] -- B[Apply] B -- D[Chain] D -- C[ChainRec]  Example: -  Read More:  http://www.tomharding.me/2017/05/30/fantas-eel-and-specification-14/  "
 },
 {
-	"uri": "/fp/monad/",
+	"uri": "//localhost/fp/monad/",
 	"title": "Monad",
 	"tags": [],
 	"description": "Monad",
-	"content": " Monad (Maybe, Either, IO) \u0026ldquo;Monads\u0026rdquo; apply a function that returns a wrapped value.  functors: you apply a function to a wrapped value using fmap or \u0026lt;$\u0026gt; applicatives: you apply a wrapped function to a wrapped value using \u0026lt;*\u0026gt; monads: you apply a function that returns a wrapped value, to a wrapped value using \u0026gt;\u0026gt;=  Graphic graph LR; A[Functor] -- B[Apply] B -- D[Applicative] D -- C[Monad] Z[Chain] -- C[Monad] B -- Z[Chain]  Maybe \u0026ldquo;Maybe\u0026rdquo; is a Functor, an Applicative, and a Monad. Suppose \u0026ldquo;half\u0026rdquo; is a function that only works on even numbers:\nExample (JavaScript): const { Option, Some, None, Result } = require('@es2/result-option') // 0.2.0 const half = (num) =\u0026gt; (num % 2 === 0) ? Some(num / 2) : None() const test1 = Some(100).chain(half).extractOr(0) console.log('test1: ', test1) // 50 const test1_1 = Some(2).chain(half).extractOr(0) console.log('test1_1: ', test1_1) // 1 const test2 = Some(3).chain(half).extractOr(0) console.log('test2: ', test2) // 0 const test3 = Some(4).chain(half).extractOr(0) console.log('test3: ', test3) // 2 const test4 = Some(None).chain(half).extractOr(0) console.log('test4: ', test4) // 0 const test5 = Some(20).chain(half).chain(half).chain(half).extractOr(0) console.log('test5: ', test5) // 0 const test6 = Some(20).chain(half).chain(half).extractOr(0) console.log('test6: ', test6) // 5  Example (Haskell): class Monad m where (\u0026gt;\u0026gt;=) :: m a -\u0026gt; (a -\u0026gt; m b) -\u0026gt; m b instance Monad Maybe where Nothing \u0026gt;\u0026gt;= func = Nothing Just val \u0026gt;\u0026gt;= func = func val half x = if even x then Just (x `div` 2) else Nothing \u0026gt; Just 2 \u0026gt;\u0026gt;= half -- Just 1 \u0026gt; Just 3 \u0026gt;\u0026gt;= half -- Nothing \u0026gt; Just 4 \u0026gt;\u0026gt;= half -- Just 2 \u0026gt; Nothing \u0026gt;\u0026gt;= half -- Nothing \u0026gt; Just 20 \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half -- Nothing \u0026gt; Just 20 \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half -- Just 5 -- If we have a Just value, we can extract the underlying value it contains through pattern matching. half x = if even x then Just (x `div` 2) else Nothing zeroAsDefault :: Maybe Int -\u0026gt; Int zeroAsDefault mx = case mx of Nothing -\u0026gt; 0 Just x -\u0026gt; x calc1 = Just 2 \u0026gt;\u0026gt;= half calc2 = Just 3 \u0026gt;\u0026gt;= half calc3 = Just 4 \u0026gt;\u0026gt;= half calc4 = Just 5 \u0026gt;\u0026gt;= half calc5 = Just 6 \u0026gt;\u0026gt;= half main = do (\\x -\u0026gt; putStrLn (\u0026#34;just 2: \u0026#34; ++ show x )) ( zeroAsDefault calc1 ) -- 1 (\\x -\u0026gt; putStrLn (\u0026#34;just 3: \u0026#34; ++ show x )) ( zeroAsDefault calc2 ) -- 0 (\\x -\u0026gt; putStrLn (\u0026#34;just 4: \u0026#34; ++ show x )) ( zeroAsDefault calc3 ) -- 2 (\\x -\u0026gt; putStrLn (\u0026#34;just 5: \u0026#34; ++ show x )) ( zeroAsDefault calc4 ) -- 0 (\\x -\u0026gt; putStrLn (\u0026#34;just 6: \u0026#34; ++ show x )) ( zeroAsDefault calc5 ) -- 3 Either The Either monad is sometimes used to represent a value which is either correct or an error, the Left constructor is used to hold an error value and the Right constructor is used to hold a correct value.\nExample (JavaScript): -  Example (Haskell): import Text.Read validateAge :: String -\u0026gt; Either String Int validateAge input = case readMaybe input of Nothing -\u0026gt; Left \u0026#34;Invalid input. Not a number\u0026#34; Just age -\u0026gt; case age of _ | age \u0026lt; 0 -\u0026gt; Left \u0026#34;Error: Invalid age. It must be greater than zero.\u0026#34; _ | age \u0026lt;= 18 -\u0026gt; Left \u0026#34;Error: Below legal age to sign the contract.\u0026#34; _ | age \u0026gt; 200 -\u0026gt; Left \u0026#34;Error: Invalid age. Impossible age.\u0026#34; _ -\u0026gt; Right age main :: IO () main = do (\\x -\u0026gt; putStrLn (\u0026#34;-100: \u0026#34; ++ show x )) ( validateAge \u0026#34;-100\u0026#34; ) (\\x -\u0026gt; putStrLn (\u0026#34;16: \u0026#34; ++ show x )) ( validateAge \u0026#34;16\u0026#34; )\nIO The IO monad wraps computations in the following context: “This computation can read information from or write information to the terminal, file system, operating system, and/or network”.\nIf you want to get user input, print a message to the user, read information from a file, or make a network call, you’ll need to do so within the IO Monad.\nFunction called main, has type IO (), every program starts in the IO monad.\nExample (JavaScript): -  Example (Haskell): toList :: String -\u0026gt; [Integer] toList input = read (\u0026#34;[\u0026#34; ++ input ++ \u0026#34;]\u0026#34;) main :: IO () main = do putStrLn \u0026#34;What is your name?\u0026#34; \u0026gt;\u0026gt; getLine \u0026gt;\u0026gt;= \\name -\u0026gt; putStrLn (\u0026#34;Hello, \u0026#34; ++ name ++ \u0026#34;!\u0026#34;)\ntype Login = String type Password = String users :: [(Login, Password)] users = [ (\u0026#34;admin\u0026#34;, \u0026#34;1234\u0026#34;) , (\u0026#34;begemot\u0026#34;, \u0026#34;0000\u0026#34;) ] askPassword :: IO Bool askPassword = do putStr \u0026#34;Enter Login: \u0026#34; login \u0026lt;- getLine putStr \u0026#34;Enter password: \u0026#34; password \u0026lt;- getLine return $ maybe False (\\p -\u0026gt; p == password) $ lookup login users main :: IO () main = do passwordIsCorrect \u0026lt;- askPassword putStrLn $ if passwordIsCorrect then \u0026#34;Welcome!\u0026#34; else \u0026#34;Incorrect password\u0026#34; Read More:  http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/ http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html https://habr.com/post/183150/ https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/maybe/2.hs https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/either/5.hs  "
+	"content": " Monad (Maybe, Either, IO) \u0026ldquo;Monads\u0026rdquo; apply a function that returns a wrapped value.  functors: you apply a function to a wrapped value using fmap or \u0026lt;$\u0026gt; applicatives: you apply a wrapped function to a wrapped value using \u0026lt;*\u0026gt; monads: you apply a function that returns a wrapped value, to a wrapped value using \u0026gt;\u0026gt;=  Graphic graph LR; A[Functor] -- B[Apply] B -- D[Applicative] D -- C[Monad] Z[Chain] -- C[Monad] B -- Z[Chain]  Maybe \u0026ldquo;Maybe\u0026rdquo; is a Functor, an Applicative, and a Monad. Suppose \u0026ldquo;half\u0026rdquo; is a function that only works on even numbers:\nExample (JavaScript): const { Option, Some, None, Result } = require('@es2/result-option') // 0.2.0 const half = (num) =\u0026gt; (num % 2 === 0) ? Some(num / 2) : None() const test1 = Some(100).chain(half).extractOr(0) console.log('test1: ', test1) // 50 const test1_1 = Some(2).chain(half).extractOr(0) console.log('test1_1: ', test1_1) // 1 const test2 = Some(3).chain(half).extractOr(0) console.log('test2: ', test2) // 0 const test3 = Some(4).chain(half).extractOr(0) console.log('test3: ', test3) // 2 const test4 = Some(None).chain(half).extractOr(0) console.log('test4: ', test4) // 0 const test5 = Some(20).chain(half).chain(half).chain(half).extractOr(0) console.log('test5: ', test5) // 0 const test6 = Some(20).chain(half).chain(half).extractOr(0) console.log('test6: ', test6) // 5  Example (Haskell): class Monad m where (\u0026gt;\u0026gt;=) :: m a -\u0026gt; (a -\u0026gt; m b) -\u0026gt; m b instance Monad Maybe where Nothing \u0026gt;\u0026gt;= func = Nothing Just val \u0026gt;\u0026gt;= func = func val half x = if even x then Just (x `div` 2) else Nothing \u0026gt; Just 2 \u0026gt;\u0026gt;= half -- Just 1 \u0026gt; Just 3 \u0026gt;\u0026gt;= half -- Nothing \u0026gt; Just 4 \u0026gt;\u0026gt;= half -- Just 2 \u0026gt; Nothing \u0026gt;\u0026gt;= half -- Nothing \u0026gt; Just 20 \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half -- Nothing \u0026gt; Just 20 \u0026gt;\u0026gt;= half \u0026gt;\u0026gt;= half -- Just 5 -- If we have a Just value, we can extract the underlying value it contains through pattern matching. half x = if even x then Just (x `div` 2) else Nothing zeroAsDefault :: Maybe Int -\u0026gt; Int zeroAsDefault mx = case mx of Nothing -\u0026gt; 0 Just x -\u0026gt; x calc1 = Just 2 \u0026gt;\u0026gt;= half calc2 = Just 3 \u0026gt;\u0026gt;= half calc3 = Just 4 \u0026gt;\u0026gt;= half calc4 = Just 5 \u0026gt;\u0026gt;= half calc5 = Just 6 \u0026gt;\u0026gt;= half main = do (\\x -\u0026gt; putStrLn (\u0026#34;just 2: \u0026#34; ++ show x )) ( zeroAsDefault calc1 ) -- 1 (\\x -\u0026gt; putStrLn (\u0026#34;just 3: \u0026#34; ++ show x )) ( zeroAsDefault calc2 ) -- 0 (\\x -\u0026gt; putStrLn (\u0026#34;just 4: \u0026#34; ++ show x )) ( zeroAsDefault calc3 ) -- 2 (\\x -\u0026gt; putStrLn (\u0026#34;just 5: \u0026#34; ++ show x )) ( zeroAsDefault calc4 ) -- 0 (\\x -\u0026gt; putStrLn (\u0026#34;just 6: \u0026#34; ++ show x )) ( zeroAsDefault calc5 ) -- 3 Either The Either monad is sometimes used to represent a value which is either correct or an error, the Left constructor is used to hold an error value and the Right constructor is used to hold a correct value.\nExample (JavaScript): -  Example (Haskell): import Text.Read validateAge :: String -\u0026gt; Either String Int validateAge input = case readMaybe input of Nothing -\u0026gt; Left \u0026#34;Invalid input. Not a number\u0026#34; Just age -\u0026gt; case age of _ | age \u0026lt; 0 -\u0026gt; Left \u0026#34;Error: Invalid age. It must be greater than zero.\u0026#34; _ | age \u0026lt;= 18 -\u0026gt; Left \u0026#34;Error: Below legal age to sign the contract.\u0026#34; _ | age \u0026gt; 200 -\u0026gt; Left \u0026#34;Error: Invalid age. Impossible age.\u0026#34; _ -\u0026gt; Right age main :: IO () main = do (\\x -\u0026gt; putStrLn (\u0026#34;-100: \u0026#34; ++ show x )) ( validateAge \u0026#34;-100\u0026#34; ) (\\x -\u0026gt; putStrLn (\u0026#34;16: \u0026#34; ++ show x )) ( validateAge \u0026#34;16\u0026#34; ) IO The IO monad wraps computations in the following context: “This computation can read information from or write information to the terminal, file system, operating system, and/or network”.\nIf you want to get user input, print a message to the user, read information from a file, or make a network call, you’ll need to do so within the IO Monad.\nFunction called main, has type IO (), every program starts in the IO monad.\nExample (JavaScript): -  Example (Haskell): toList :: String -\u0026gt; [Integer] toList input = read (\u0026#34;[\u0026#34; ++ input ++ \u0026#34;]\u0026#34;) main :: IO () main = do putStrLn \u0026#34;What is your name?\u0026#34; \u0026gt;\u0026gt; getLine \u0026gt;\u0026gt;= \\name -\u0026gt; putStrLn (\u0026#34;Hello, \u0026#34; ++ name ++ \u0026#34;!\u0026#34;) type Login = String type Password = String users :: [(Login, Password)] users = [ (\u0026#34;admin\u0026#34;, \u0026#34;1234\u0026#34;) , (\u0026#34;begemot\u0026#34;, \u0026#34;0000\u0026#34;) ] askPassword :: IO Bool askPassword = do putStr \u0026#34;Enter Login: \u0026#34; login \u0026lt;- getLine putStr \u0026#34;Enter password: \u0026#34; password \u0026lt;- getLine return $ maybe False (\\p -\u0026gt; p == password) $ lookup login users main :: IO () main = do passwordIsCorrect \u0026lt;- askPassword putStrLn $ if passwordIsCorrect then \u0026#34;Welcome!\u0026#34; else \u0026#34;Incorrect password\u0026#34; Read More:  http://www.tomharding.me/2017/06/05/fantas-eel-and-specification-15/ http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html https://habr.com/post/183150/ https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/maybe/2.hs https://github.com/SanderV1992/Haskell-learn-functional-programming/blob/master/app/monads/either/5.hs  "
 },
 {
-	"uri": "/fp/extend/",
+	"uri": "//localhost/fp/extend/",
 	"title": "Extend",
 	"tags": [],
 	"description": "Extend",
 	"content": " Extend Graphic graph LR; A[Functor] -- C[Extend]  Example: -  Read More:  http://www.tomharding.me/2017/06/12/fantas-eel-and-specification-16/  "
 },
 {
-	"uri": "/fp/comonad/",
+	"uri": "//localhost/fp/comonad/",
 	"title": "Comonad",
 	"tags": [],
 	"description": "Comonad",
 	"content": " Extend Graphic graph LR; A[Functor] -- B[Extend] B -- D[Comonad]  Example: -  Read More:  http://www.tomharding.me/2017/06/19/fantas-eel-and-specification-17/  "
 },
 {
-	"uri": "/fp/bifunctor_and_profunctor/",
+	"uri": "//localhost/fp/bifunctor_and_profunctor/",
 	"title": "Bifunctor and Profunctor",
 	"tags": [],
 	"description": "Bifunctor and Profunctor",
 	"content": " Bifunctor and Profunctor Graphic graph LR; A[Functor] -- B[Bifunctor]  Bifunctor (Either, Pair, Task) - class allows us to deal with two inner types (left and right!).\nExample: Either const { Left, Right } = require('fantasy-eithers') Function.prototype.map = function (f) { return x =\u0026gt; f(this(x)) } //- Where everything changes... const login = user =\u0026gt; user.name == 'Tom' ? Right(user) : Left('Boo') //- Function map === \u0026quot;piping\u0026quot;. //+ failureStream :: String //+ -\u0026gt; HTML const failureStream = (x =\u0026gt; x.toUpperCase()) .map(x =\u0026gt; x + '!') .map(x =\u0026gt; '\u0026lt;em\u0026gt;' + x + '\u0026lt;/em\u0026gt;') //+ successStream :: User //+ -\u0026gt; HTML const successStream = (x =\u0026gt; x.name) .map(x =\u0026gt; 'Hey, ' + x + '!') .map(x =\u0026gt; '\u0026lt;h1\u0026gt;' + x + '\u0026lt;/h1\u0026gt;') const user = { name: 'Tom' } console.log( //- We can now pass in our two //- possible application flows //- using `bimap`! login(user).bimap( failureStream, successStream) )  Pair ?  Task ?  Profunctor - ? graph LR; A[Functor] -- B[Profunctor]  Read More:  http://www.tomharding.me/2017/06/26/fantas-eel-and-specification-18/  "
 },
 {
-	"uri": "/fp/categories/",
+	"uri": "//localhost/fp/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/fp/",
+	"uri": "//localhost/fp/",
 	"title": "Functional Programming (Fantasy Land JavaScript specification Guide)",
 	"tags": [],
 	"description": "",
 	"content": " Functional Programming (Fantasy Land JavaScript specification Guide) Basics Javascript (Books)  Mostly adequate guide to FP (in javascript) Mostly adequate guide to FP (in javascript) Functional Programming in JavaScript (Luis Atencio)  Javascript (Articles)  Habr (Функциональное программирование в JavaScript с практическими примерами) Fantasy Land Fantas, Eel, and Specification Введение в FP/RP Спецификация Fantasy Land  Javascript (Presentation)  Функциональный Javascript (small presentation) JavaScript functional programming (presentation)  JavaScript (functional libraries)  https://ramdajs.com/ https://github.com/sergeysova/es2-result-option  TypeScript (functional libraries)  https://github.com/gcanti/fp-ts  Haskell (Books)  О Haskell по-человечески Учебник по Haskell Learn You a Haskell for Great Good! (beginner\u0026rsquo;s guide) Язык Haskell и Алгебраические Типы Данных Классы типов в Haskell  Haskell (Video courses - Russian)  Функциональное программирование на языке Haskell (часть 1) Функциональное программирование на языке Haskell (часть 2)  "
 },
 {
-	"uri": "/fp/tags/",
+	"uri": "//localhost/fp/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

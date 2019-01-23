@@ -1,6 +1,6 @@
-#baseURL = "http://example.org/"
-baseURL = "/fp"
+baseURL = "//localhost/fp"
 publishDir = "docs"
+
 
 languageCode = "en-us"
 title = "Functional Programming (Fantasy Land JavaScript specification Guide)"
