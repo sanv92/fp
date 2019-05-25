@@ -38,7 +38,7 @@ fi
 git commit -m "$msg"
 
 # Add repository
-git remote add origin git@github.com:everyone-can-code/fp.git
+git remote add origin https://github.com/everyone-can-code/fp.git
 
 # Push source and build repos.
 git push origin master --force
