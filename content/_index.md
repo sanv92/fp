@@ -51,13 +51,13 @@ pre = "<b>1. </b>"
 ---
 
 ### Popular functional programming languages
-- <a href="https://www.haskell.org/">Haskell</a>
-- <a href="https://reasonml.github.io/">ReasonML</a>
-- <a href="http://ocaml.org/">OCaml</a>
-- <a href="http://www.purescript.org/">PureScript</a>
-- <a href="https://elm-lang.org/">ELM</a>
-- <a href="https://elixir-lang.org/">Elixir</a>
-- <a href="https://fsharp.org/">F#</a>
-- <a href="https://www.scala-lang.org/">Scala</a>
-- <a href="https://clojure.org/">Clojure</a>
-- <a href="https://www.idris-lang.org/">Idris</a>
+- <a href="//haskell.org/">Haskell</a>
+- <a href="//reasonml.github.io/">ReasonML</a>
+- <a href="//ocaml.org/">OCaml</a>
+- <a href="//purescript.org/">PureScript</a>
+- <a href="//elm-lang.org/">ELM</a>
+- <a href="//elixir-lang.org/">Elixir</a>
+- <a href="//fsharp.org/">F#</a>
+- <a href="//scala-lang.org/">Scala</a>
+- <a href="//clojure.org/">Clojure</a>
+- <a href="//idris-lang.org/">Idris</a>
