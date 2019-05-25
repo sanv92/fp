@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="" />
+    <list default="true" id="abf21f9d-0e71-4d64-afec-8ea7010d2491" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/alt_plus_and_alternative/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/alt_plus_and_alternative/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/applicative/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/applicative/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/apply/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/apply/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bifunctor_and_profunctor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bifunctor_and_profunctor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/chain/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chainrec/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/chainrec/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/comonad/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/comonad/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/contravariant/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/contravariant/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/extend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/extend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/foldable/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/foldable/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/functor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/functor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/monad/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/monad/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/monoid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/monoid/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/ord/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/ord/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/semigroup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/semigroup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/setoid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/setoid/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/traversable/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/traversable/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -292,18 +316,18 @@
       <option name="presentableId" value="Default" />
       <updated>1547498221694</updated>
       <workItem from="1547498223581" duration="2012000" />
-      <workItem from="1558765040285" duration="2641000" />
+      <workItem from="1558765040285" duration="2785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4653000" />
+    <option name="totallyTimeSpent" value="4797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29880196" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29880196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -664,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
