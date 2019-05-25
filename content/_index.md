@@ -31,7 +31,6 @@ pre = "<b>1. </b>"
 
 ### JavaScript (functional libraries)
 - https://ramdajs.com/
-- https://github.com/sergeysova/es2-result-option
 
 ### TypeScript (functional libraries)
 - https://github.com/gcanti/fp-ts
@@ -48,3 +47,17 @@ pre = "<b>1. </b>"
 ### Haskell (Video courses - Russian)
 - <a href="https://stepik.org/course/75">Функциональное программирование на языке Haskell (часть 1)</a>
 - <a href="https://stepik.org/course/693/">Функциональное программирование на языке Haskell (часть 2)</a>
+
+---
+
+### Popular functional programming languages
+- <a href="https://www.haskell.org/">Haskell</a>
+- <a href="https://reasonml.github.io/">ReasonML</a>
+- <a href="http://ocaml.org/">OCaml</a>
+- <a href="http://www.purescript.org/">PureScript</a>
+- <a href="https://elm-lang.org/">ELM</a>
+- <a href="https://elixir-lang.org/">Elixir</a>
+- <a href="https://fsharp.org/">F#</a>
+- <a href="https://www.scala-lang.org/">Scala</a>
+- <a href="https://clojure.org/">Clojure</a>
+- <a href="https://www.idris-lang.org/">Idris</a>

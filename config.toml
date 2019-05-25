@@ -21,9 +21,3 @@ name = "<i class='fa fa-github'></i> Github repo"
 identifier = "ds"
 url = "https://github.com/SanderV1992"
 weight = 10
-
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
