@@ -31,6 +31,7 @@ pre = "<b>1. </b>"
 
 ### JavaScript (functional libraries)
 - https://ramdajs.com/
+- https://crocks.dev/
 
 ### TypeScript (functional libraries)
 - https://github.com/gcanti/fp-ts
